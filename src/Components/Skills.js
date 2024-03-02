@@ -20,37 +20,37 @@ const Skills = () => {
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={html} alt="html" />
-                        <p className="py-4">HTML</p>
+                        <p className="py-4 text-[#B7E5B4]">HTML</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={css} alt="css" />
-                        <p className="py-4">CSS</p>
+                        <p className="py-4 text-[#B7E5B4]">CSS</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={js} alt="js" />
-                        <p className="py-4">JavaScript</p>
+                        <p className="py-4 text-[#B7E5B4]">JavaScript</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={github} alt="github" />
-                        <p className="py-4">Github</p>
+                        <p className="py-4 text-[#B7E5B4]">Github</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={git} alt="git" />
-                        <p className="py-4">Git</p>
+                        <p className="py-4 text-[#B7E5B4]">Git</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={physics} alt="react" />
-                        <p className="py-4">React JS</p>
+                        <p className="py-4 text-[#B7E5B4]">React JS</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={python} alt="python" />
-                        <p className="py-4">Python</p>
+                        <p className="py-4 text-[#B7E5B4]">Python</p>
                     </div>
                 </div>
             </div>
