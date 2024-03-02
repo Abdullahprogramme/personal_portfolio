@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import man from 'C:/Personal Files/personal-portfolio/src/Assets/man.png';
+import man from '../Assets/man.png';
 import {FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
