@@ -28,7 +28,7 @@ const Work = () => {
                                 {/* <a href="/">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
-                                <a href="https://check-body-mass-index.netlify.app/" target="_blank" rel="noreferrer">
+                                <a href="https://check-body-mass-index.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">App</button>
                                 </a>
                             </div>
@@ -47,7 +47,7 @@ const Work = () => {
                                 {/* <a href="/">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
-                                <a href="https://github.com/Abdullahprogramme/APS-Project/" target="_blank" rel="noreferrer">
+                                <a href="https://github.com/Abdullahprogramme/APS-Project/" target="_blank" rel="noopener noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
                                 </a>
                             </div>
@@ -66,7 +66,7 @@ const Work = () => {
                                 {/* <a href="/">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
-                                <a href="https://github.com/Abdullahprogramme/additonal-programs/blob/main/password%20manager.py" target="_blank" rel="noreferrer">
+                                <a href="https://github.com/Abdullahprogramme/additonal-programs/blob/main/password%20manager.py" target="_blank" rel="noopener noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
                                 </a>
                             </div>
@@ -85,7 +85,7 @@ const Work = () => {
                                 {/* <a href="/">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
-                                <a href="https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders" target="_blank" rel="noreferrer">
+                                <a href="https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders" target="_blank" rel="noopener noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
                                 </a>
                             </div>
