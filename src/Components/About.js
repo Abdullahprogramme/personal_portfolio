@@ -12,10 +12,10 @@ const About = () => {
                     <div></div>
                 </div>
                 <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-                    <div className="sm:text-right text-4xl pl-4 font-bold text-pink-500">
+                    <div className="sm:text-right text-start text-4xl pl-4 font-bold text-pink-500">
                         <p>Hi. I am Abdullah, nice to meet you. Please take a look around.</p>
                     </div>
-                    <div>
+                    <div className="text-gray-400 text-justify pr-4">
                         <p>
                             I am a front end developer with a passion for creating beautiful and functional websites. I am proficient in HTML, CSS, JavaScript, React, and Tailwind CSS. Currently I am a freshmen at Habib University, Karachi, Pakistan. I am also a self-taught developer and have been working on minor projects of my own for some months. I am always looking for new opportunities to learn and grow as a developer. 
                         </p>
