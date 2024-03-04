@@ -13,12 +13,14 @@ const About = () => {
                 </div>
                 <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-8 max-w-[1000px] w-full">
                     <div className="sm:text-right text-start text-4xl pl-4 font-bold text-pink-500 mb-4 sm:mb-0">
-                        <p>Hi. I am Abdullah, nice to meet you. Please take a look around.</p>
+                        <p>Hello there! Welcome to my space. Feel free to explore around.</p>
                     </div>
                     <div className="text-gray-400 text-justify pl-4 pr-4 sm:border-l-4 sm:border-pink-300 border-t-4 border-pink-300 sm:border-t-0 mx-4">
                     {/* <div className="text-gray-400 text-justify pl-4 pr-4 sm:border-l-4 sm:border-pink-300 border-t-4 border-pink-300 sm:border-t-0"> */}
                         <p>
-                            I am a front end developer with a passion for creating beautiful and functional websites. I am proficient in HTML, CSS, JavaScript, React, and Tailwind CSS. Currently I am a freshmen at Habib University, Karachi, Pakistan. I am also a self-taught developer and have been working on minor projects of my own for some months. I am always looking for new opportunities to learn and grow as a developer. 
+                            As a front-end developer, I specialize in crafting visually appealing and functional websites.
+                            Proficient in HTML, CSS, JavaScript, React, and Tailwind CSS, I am currently a freshman at Habib University in Karachi, Pakistan. 
+                            My journey as a self-taught developer involves working on various minor projects, and I am enthusiastic about exploring new opportunities for continuous learning and professional growth. 
                         </p>
                     </div>
                 </div>
