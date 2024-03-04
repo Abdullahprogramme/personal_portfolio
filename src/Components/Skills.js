@@ -6,6 +6,7 @@ import js from "../Assets/js.png";
 import html from "../Assets/html.png";
 import css from "../Assets/css.png";
 import python from "../Assets/python.png";
+import tailwind from "../Assets/tailwind.png";
 
 const Skills = () => {
     return (
@@ -51,6 +52,11 @@ const Skills = () => {
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={python} alt="python" />
                         <p className="py-4 text-[#B7E5B4]">Python</p>
+                    </div>
+
+                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                        <img className="w-20 mx-auto" src={tailwind} alt="tailwind" />
+                        <p className="py-4 text-[#B7E5B4]">Tailwind CSS</p>
                     </div>
                 </div>
             </div>
