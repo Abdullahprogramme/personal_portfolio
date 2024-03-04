@@ -15,7 +15,7 @@ const About = () => {
                     <div className="sm:text-right text-start text-4xl pl-4 font-bold text-pink-500 mb-4 sm:mb-0">
                         <p>Hello there! Welcome to my space. Feel free to explore around.</p>
                     </div>
-                    <div className="text-gray-400 text-justify pl-4 pr-4 sm:border-l-4 sm:border-pink-300 border-t-4 border-pink-300 sm:border-t-0 mx-4">
+                    <div className="text-gray-400 text-justify sm:pl-4 lg:pl-4 md:pl-4 pr-4 sm:border-l-4 sm:border-pink-300 border-t-4 border-pink-300 sm:border-t-0 mx-4">
                     {/* <div className="text-gray-400 text-justify pl-4 pr-4 sm:border-l-4 sm:border-pink-300 border-t-4 border-pink-300 sm:border-t-0"> */}
                         <p>
                             As a front-end developer, I specialize in crafting visually appealing and functional websites.
