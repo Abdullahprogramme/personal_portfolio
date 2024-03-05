@@ -47,7 +47,7 @@ const Work = () => {
                                 <span className="text-2xl font-bold text-white tracking-wider">Tkinter application</span>
                             </div>
                             <div className="pt-4 text-center">
-                                <span className="text-center font-bold text-[#12372A] text-lg">Test your knowledge by this quiz</span>
+                                <span className="text-center font-bold text-[#12372A] text-lg">Test your knowledge by this interactive quiz</span>
                             </div>
                             <div className="pt-8 text-center">
                                 {/* <a href="/">
