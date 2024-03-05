@@ -21,9 +21,12 @@ const Work = () => {
                         
                         {/* Hover effects */}
                         <div className="opacity-0 group-hover:opacity-100">
-                            <span className="text-2xl font-bold text-white tracking-wider">
-                                React JS application
-                            </span>
+                            <div className="text-center">
+                                <span className="text-2xl font-bold text-white tracking-wider">React JS application</span>
+                            </div>
+                            <div className="pt-4 text-center">
+                                <span className="text-center font-bold text-[#12372A] text-lg">Check your body mass index and seek advice</span>
+                            </div>
                             <div className="pt-8 text-center">
                                 {/* <a href="/">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
@@ -40,9 +43,12 @@ const Work = () => {
                         
                         {/* Hover effects */}
                         <div className="opacity-0 group-hover:opacity-100">
-                            <span className="text-2xl font-bold text-white tracking-wider">
-                                Tkinter application
-                            </span>
+                            <div className="text-center">
+                                <span className="text-2xl font-bold text-white tracking-wider">Tkinter application</span>
+                            </div>
+                            <div className="pt-4 text-center">
+                                <span className="text-center font-bold text-[#12372A] text-lg">Test your knowledge by this quiz</span>
+                            </div>
                             <div className="pt-8 text-center">
                                 {/* <a href="/">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
@@ -59,9 +65,12 @@ const Work = () => {
                         
                         {/* Hover effects */}
                         <div className="opacity-0 group-hover:opacity-100">
-                            <span className="text-2xl font-bold text-white tracking-wider">
-                                Password manager
-                            </span>
+                            <div className="text-center">
+                                <span className="text-2xl font-bold text-white tracking-wider">Password manager</span>
+                            </div>
+                            <div className="pt-4 text-center">
+                                <span className="text-center font-bold text-[#12372A] text-lg">Store your passwords securely by this password manager</span>
+                            </div>
                             <div className="pt-8 text-center">
                                 {/* <a href="/">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
@@ -78,9 +87,12 @@ const Work = () => {
                         
                         {/* Hover effects */}
                         <div className="opacity-0 group-hover:opacity-100">
-                            <span className="text-2xl font-bold text-white tracking-wider">
-                                Pygame application
-                            </span>
+                            <div className="text-center">
+                                <span className="text-2xl font-bold text-white tracking-wider">Pygame application</span>
+                            </div>
+                            <div className="pt-4 text-center">
+                                <span className="text-center font-bold text-[#12372A] text-lg">A retro game of space invaders using Pygame</span>
+                            </div>
                             <div className="pt-8 text-center">
                                 {/* <a href="/">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
