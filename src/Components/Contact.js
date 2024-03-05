@@ -27,7 +27,7 @@ const Contact = () => {
                 <textarea className='bg-[#ccd6f6] p-2 placeholder-black' name="message" rows="10" placeholder="Message"></textarea>
                 <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">Send</button>
             </form>
-            <p className="font-bold text-2xl text-[#416D19]">
+            <p className="font-bold text-2xl text-[#416D19] hover:text-pink-600">
                 / Thank you for visiting my portfolio. I hope you liked it. /
             </p>
         </div>
