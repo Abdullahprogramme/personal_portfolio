@@ -24,7 +24,7 @@ const Home = () => {
             
             {/* container */}
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-                <p className="text-pink-600 font-bold text-2xl">Hi, My name is</p>
+                <p className="text-pink-500 font-bold text-2xl">Hi, My name is</p>
                 <h1 className="text-4xl sm:text-7xl font-bold text-[#416D19]">Abdullah Tariq</h1>
                 <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]"><span ref={el} className="descriptionTyped" /></h2>
                 <p className="text-[#8892b0] py-4 max-w-[700px]">I'm a front-end developer passionate about creating user-friendly interfaces. 
