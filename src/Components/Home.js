@@ -52,7 +52,7 @@ const Home = () => {
                     </p>
                     <p className="text-[#8892b0] py-1 max-w-[700px]">
                         <span className="flex items-center">
-                        <FaArrowRight className="mr-2 text-[#416D19]"  /> Let's collaborate to build something amazing! 
+                        <FaArrowRight className="mr-2 text-[#416D19]"  />Let's collaborate to build something amazing! 
                         </span>
                     </p>
                 </div>
