@@ -4,7 +4,7 @@ Welcome to my portfolio website repository! This is where I showcase my projects
 
 ## Description
 
-This repository contains the source code for my personal portfolio website. It serves as a showcase of my skills, projects, and experiences in the field of **Computer Science**.
+This repository contains the source code for my personal portfolio website. Feel free to use this as a starter template for your personal portfolio website. It serves as a showcase of my skills, projects, and experiences in the field of **Computer Science**.
 
 ## Tools Used
 
