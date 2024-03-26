@@ -12,6 +12,14 @@ This repository contains the source code for my personal portfolio website. It s
 - **JavaScript**: Implemented for interactivity and dynamic content.
 - **Tailwind CSS**: Utilized for responsive design and layout components.
 - **Netlify**: Hosts the website for free using GitHub repository as a source.
+- 
+## Features
+
+- **Project Showcase**: Displays my portfolio projects with detailed descriptions, showcasing my skills and expertise.
+- **About Me Section**: Provides information about my background, education, and professional experience.
+- **Skills & Technologies**: Highlights the programming languages, frameworks, and tools that I am proficient in.
+- **Contact Form**: Allows visitors to reach out to me directly through a contact form or provided contact details.
+- **Responsive Design**: Ensures that the website is fully functional and visually appealing on desktops, tablets, and mobile devices.
 
 ## Getting Started
 
