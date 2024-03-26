@@ -25,3 +25,22 @@
 .content-div:hover {
     background-image: linear-gradient(to right, rgb(112,157, 255, 0.8), hsla(242, 74%, 61%, 0.8))!important;
 }
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-300%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(10%);
+        opacity: 1;
+    }
+}
+
+.arrow-icon {
+    animation: slideInFromLeft 1s ease-in-out infinite;
+}
