@@ -9,7 +9,6 @@ const About = () => {
                         <p className="text-4xl text-[#416D19] font-bold inline border-b-4 border-pink-300">About</p>
                     </div>
 
-                    <div></div>
                 </div>
                 <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-8 max-w-[1000px] w-full">
                     <div className="sm:text-right text-start text-4xl pl-4 font-bold text-pink-500 mb-4 sm:mb-0">
