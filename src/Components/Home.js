@@ -29,7 +29,7 @@ const Home = () => {
                 <h1 className="text-4xl sm:text-7xl font-bold text-[#416D19]">Abdullah Tariq</h1>
                 <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]"><span ref={el} className="descriptionTyped" /></h2>
         
-                <div className="flex flex-col">
+                <div className="flex flex-col mt-2 mb-2">
                     <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text">
                         <span className="flex sm:items-start md:items-start lg:items-center">
                             <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" />I'm a front-end developer passionate about creating user-friendly interfaces.
@@ -71,4 +71,3 @@ const Home = () => {
 }
 
 export default Home;
-
