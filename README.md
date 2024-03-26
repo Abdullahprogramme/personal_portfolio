@@ -26,5 +26,5 @@ This repository contains the source code for my personal portfolio website. It s
 To clone this repository locally, use the following command:
 
 ```bash
-git clone https://github.com/your-username/portfolio-website.git
+git clone https://github.com/Abdullahprogramme/personal_portfolio
 ```
