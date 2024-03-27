@@ -25,9 +25,9 @@ const Contact = () => {
                 <input className='bg-[#ccd6f6] p-2 placeholder-black' type="text" placeholder="Name" name="name" />
                 <input className='my-4 p-2 bg-[#ccd6f6] placeholder-black' type="text" placeholder="Email" name="email" />
                 <textarea className='bg-[#ccd6f6] p-2 placeholder-black' name="message" placeholder="Message" style={{ resize: 'vertical', maxHeight: '250px', minHeight: '100px' }}></textarea>
-                <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">Send</button>
+                <button className="text-white border-2 hover:bg-pink-500 hover:border-pink-500 px-4 py-3 my-8 mx-auto flex items-center">Send</button>
             </form>
-            <p className="font-bold text-2xl text-[#416D19] hover:text-pink-600">
+            <p className="font-bold text-2xl text-[#416D19] hover:text-pink-500">
                 / Thank you for visiting my portfolio. I hope you liked it. /
             </p>
         </div>
