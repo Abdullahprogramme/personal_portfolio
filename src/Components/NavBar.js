@@ -18,7 +18,7 @@ const NavBar = () => {
             </div>
 
             {/* menu */}
-            <ul className="hidden md:flex">
+            <ul className="hidden custom:flex">
                 <li>
                     <Link to="home" duration={500} smooth={true}>Home</Link>
                 </li>
@@ -36,7 +36,7 @@ const NavBar = () => {
                 </li>
             </ul>
 
-            <div onClick={handleclick} className="md:hidden z-10">
+            <div onClick={handleclick} className="custom:hidden z-10">
                 {!nav ? <FaBars /> : <FaTimes />}
             </div>
 
@@ -60,7 +60,7 @@ const NavBar = () => {
             </ul>
 
             {/* Social icons */}
-            <div className={`fixed flex-col top-[35%] left-0 ${nav ? 'flex' : 'hidden'} md:flex`}>
+            <div className={`fixed flex-col top-[35%] left-0 ${nav ? 'flex' : 'hidden'} custom:flex`}>
             {/* <div className="lg:flex fixed flex-col top-[35%] left-0 "> */}
                 <ul>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
