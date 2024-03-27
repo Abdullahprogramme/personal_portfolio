@@ -32,27 +32,27 @@ const Home = () => {
                 <div className="flex flex-col">
                     <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text" style={{animationDelay: '0.5s'}}>
                         <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" />I'm a front-end developer passionate about creating user-friendly interfaces.
+                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />I'm a front-end developer passionate about creating user-friendly interfaces.
                         </span>
                     </p>
                     <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text" style={{animationDelay: '1s'}}>
                         <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" />My expertise lies in crafting seamless and responsive web experiences. 
+                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />My expertise lies in crafting seamless and responsive web experiences. 
                         </span>
                     </p>
                     <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text" style={{animationDelay: '1.5s'}}>
                         <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" />I bring ideas to life by blending creativity with technical know-how. 
+                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />I bring ideas to life by blending creativity with technical know-how. 
                         </span>
                     </p>
                     <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text" style={{animationDelay: '2s'}}> 
                         <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" />Proficient in React and Python, I have prior experience in both technologies. 
+                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />Proficient in React and Python, I have prior experience in both technologies. 
                         </span>
                     </p>
                     <p className="text-[#8892b0] py-1 max-w-[700px] ml-[-0.2rem] lg:ml-0 paragraph-text" style={{animationDelay: '2.5s'}}>
                         <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-1.5 lg:mr-2 text-[#416D19] arrow-icon" />Let's collaborate to build something amazing! 
+                            <FaAngleRight className="mr-1.5 lg:mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />Let's collaborate to build something amazing! 
                         </span>
                     </p>
                 </div>
