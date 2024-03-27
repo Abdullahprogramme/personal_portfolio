@@ -61,7 +61,7 @@
     animation: slideInFromRight 1s ease-out forwards;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
     .arrow-icon {
         position: relative;
         top: 5px;
