@@ -12,7 +12,6 @@ This repository contains the source code for my personal portfolio website. Feel
 - **JavaScript**: Implemented for interactivity and dynamic content.
 - **Tailwind CSS**: Utilized for responsive design and layout components.
 - **Netlify**: Hosts the website for free using GitHub repository as a source.
-- 
 ## Features
 
 - **Project Showcase**: Displays my portfolio projects with detailed descriptions, showcasing my skills and expertise.
