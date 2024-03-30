@@ -3,6 +3,7 @@ import BMI from "../Assets/BMI.jpg";
 import space from "../Assets/space.png";
 import Password from "../Assets/Password.jpg";
 import test from "../Assets/test.png";
+import PasswordGenerator from "../Assets/PasswordGenerator.png";
 
 const Work = () => {
     return (
@@ -99,6 +100,28 @@ const Work = () => {
                                 </a> */}
                                 <a href="https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders" target="_blank" rel="noopener noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Grid item */}
+                    <div style={{backgroundImage: `url(${PasswordGenerator})`}} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+                        
+                        {/* Hover effects */}
+                        <div className="opacity-0 group-hover:opacity-100">
+                            <div className="text-center">
+                                <span className="text-2xl font-bold text-white tracking-wider">Password Generator</span>
+                            </div>
+                            <div className="pt-4 text-center">
+                                <span className="text-center font-bold text-[#12372A] text-lg">Generate strong passwords using this password generator</span>
+                            </div>
+                            <div className="pt-8 text-center">
+                                {/* <a href="/">
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
+                                </a> */}
+                                <a href="https://passforge.netlify.app" target="_blank" rel="noopener noreferrer">
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">App</button>
                                 </a>
                             </div>
                         </div>
