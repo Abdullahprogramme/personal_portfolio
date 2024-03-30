@@ -35,6 +35,9 @@ const Work = () => {
                                 <a href="https://check-body-mass-index.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">App</button>
                                 </a>
+                                 <a href="https://github.com/Abdullahprogramme/BMI-calculator" target="_blank" rel="noopener noreferrer">
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -122,6 +125,9 @@ const Work = () => {
                                 </a> */}
                                 <a href="https://passforge.netlify.app" target="_blank" rel="noopener noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">App</button>
+                                </a>
+                                <a href="https://github.com/Abdullahprogramme/Password_Generator" target="_blank" rel="noopener noreferrer">
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
                                 </a>
                             </div>
                         </div>
