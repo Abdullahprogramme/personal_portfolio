@@ -3,8 +3,9 @@ import BMI from "../Assets/BMI.jpg";
 import space from "../Assets/space.png";
 import Password from "../Assets/Password.jpg";
 import test from "../Assets/test.png";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import PasswordGenerator from "../Assets/PasswordGenerator.png";
+import ProjectCard1 from "./ProjectCard1";
+import ProjectCard2 from "./ProjectCard2";
 
 const Work = () => {
     return (
@@ -14,125 +15,50 @@ const Work = () => {
                     <p className="text-4xl font-bold inline border-b-4 text-[#416D19] border-pink-300">Work</p>
                     <p className="py-6">/ Check out my previous works. /</p>
                 </div>
-
                 {/* Container */}
                 <div className="grid sm:grid-cols-2 pl-2 pr-2 md:grid-cols-3 gap-4">
+                    
+                    {/* BMI calculator */}
+                    <ProjectCard1 
+                        image={BMI} 
+                        title={"React JS application"} 
+                        description={"Check your body mass index and seek advice"} 
+                        appLink={"https://check-body-mass-index.netlify.app/"} 
+                        codeLink={"https://github.com/Abdullahprogramme/BMI-calculator"}
+                    />
 
-                    {/* Grid item */}
-                    <div style={{backgroundImage: `url(${BMI})`}} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-                        
-                        {/* Hover effects */}
-                        <div className="opacity-0 group-hover:opacity-100">
-                            <div className="text-center">
-                                <span className="text-2xl font-bold text-white tracking-wider">React JS application</span>
-                            </div>
-                            <div className="pt-4 text-center">
-                                <span className="text-center font-bold text-[#12372A] text-lg">Check your body mass index and seek advice</span>
-                            </div>
-                            <div className="pt-8 text-center">
-                                {/* <a href="/">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
-                                </a> */}
-                                <a href="https://check-body-mass-index.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaExternalLinkAlt className="inline-block mr-2" />App</button>
-                                </a>
-                                <a href="https://github.com/Abdullahprogramme/BMI-calculator" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {/* Tkinter application */}
+                    <ProjectCard2 
+                        image={test} 
+                        title={"Tkinter application"} 
+                        description={"Test your knowledge by this interactive quiz"} 
+                        codeLink={"https://github.com/Abdullahprogramme/APS-Project/"}
+                    />
+                    
+                    {/* Password manager */}
+                    <ProjectCard2 
+                        image={Password} 
+                        title={"Password manager"} 
+                        description={"Store your passwords securely by this password manager"} 
+                        codeLink={"https://github.com/Abdullahprogramme/additonal-programs/blob/main/password%20manager.py"}
+                    />
+                    
+                    {/* Pygame application */}
+                    <ProjectCard2 
+                        image={space} 
+                        title={"Pygame application"} 
+                        description={"A retro game of space invaders using Pygame"} 
+                        codeLink={"https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders"}
+                    />
 
-                    {/* Grid item */}
-                    <div style={{backgroundImage: `url(${test})`}} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-                        
-                        {/* Hover effects */}
-                        <div className="opacity-0 group-hover:opacity-100">
-                            <div className="text-center">
-                                <span className="text-2xl font-bold text-white tracking-wider">Tkinter application</span>
-                            </div>
-                            <div className="pt-4 text-center">
-                                <span className="text-center font-bold text-[#12372A] text-lg">Test your knowledge by this interactive quiz</span>
-                            </div>
-                            <div className="pt-8 text-center">
-                                {/* <a href="/">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
-                                </a> */}
-                                <a href="https://github.com/Abdullahprogramme/APS-Project/" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Grid item */}
-                    <div style={{backgroundImage: `url(${Password})`}} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-                        
-                        {/* Hover effects */}
-                        <div className="opacity-0 group-hover:opacity-100">
-                            <div className="text-center">
-                                <span className="text-2xl font-bold text-white tracking-wider">Password manager</span>
-                            </div>
-                            <div className="pt-4 text-center">
-                                <span className="text-center font-bold text-[#12372A] text-lg">Store your passwords securely by this password manager</span>
-                            </div>
-                            <div className="pt-8 text-center">
-                                {/* <a href="/">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
-                                </a> */}
-                                <a href="https://github.com/Abdullahprogramme/additonal-programs/blob/main/password%20manager.py" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Grid item */}
-                    <div style={{backgroundImage: `url(${space})`}} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-                        
-                        {/* Hover effects */}
-                        <div className="opacity-0 group-hover:opacity-100">
-                            <div className="text-center">
-                                <span className="text-2xl font-bold text-white tracking-wider">Pygame application</span>
-                            </div>
-                            <div className="pt-4 text-center">
-                                <span className="text-center font-bold text-[#12372A] text-lg">A retro game of space invaders using Pygame</span>
-                            </div>
-                            <div className="pt-8 text-center">
-                                {/* <a href="/">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
-                                </a> */}
-                                <a href="https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Grid item */}
-                    <div style={{backgroundImage: `url(${PasswordGenerator})`}} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-                        
-                        {/* Hover effects */}
-                        <div className="opacity-0 group-hover:opacity-100">
-                            <div className="text-center">
-                                <span className="text-2xl font-bold text-white tracking-wider">Password Generator</span>
-                            </div>
-                            <div className="pt-4 text-center">
-                                <span className="text-center font-bold text-[#12372A] text-lg">Generate strong passwords using this password generator</span>
-                            </div>
-                            <div className="pt-8 text-center">
-                                {/* <a href="/">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
-                                </a> */}
-                                <a href="https://passforge.netlify.app" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaExternalLinkAlt className="inline-block mr-2" />App</button>
-                                </a>
-                                <a href="https://github.com/Abdullahprogramme/Password_Generator" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {/* Password generator */}
+                    <ProjectCard1 
+                        image={PasswordGenerator} 
+                        title={"Password Generator"} 
+                        description={"Generate strong passwords using this password generator"} 
+                        appLink={"https://passforge.netlify.app"} 
+                        codeLink={"https://github.com/Abdullahprogramme/Password_Generator"}
+                    />
 
                 </div>
             </div>
