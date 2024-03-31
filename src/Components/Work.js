@@ -3,6 +3,7 @@ import BMI from "../Assets/BMI.jpg";
 import space from "../Assets/space.png";
 import Password from "../Assets/Password.jpg";
 import test from "../Assets/test.png";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import PasswordGenerator from "../Assets/PasswordGenerator.png";
 
 const Work = () => {
@@ -33,10 +34,10 @@ const Work = () => {
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
                                 <a href="https://check-body-mass-index.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">App</button>
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaExternalLinkAlt className="inline-block mr-2" />App</button>
                                 </a>
                                 <a href="https://github.com/Abdullahprogramme/BMI-calculator" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
                                 </a>
                             </div>
                         </div>
@@ -58,7 +59,7 @@ const Work = () => {
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
                                 <a href="https://github.com/Abdullahprogramme/APS-Project/" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
                                 </a>
                             </div>
                         </div>
@@ -80,7 +81,7 @@ const Work = () => {
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
                                 <a href="https://github.com/Abdullahprogramme/additonal-programs/blob/main/password%20manager.py" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
                                 </a>
                             </div>
                         </div>
@@ -102,7 +103,7 @@ const Work = () => {
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
                                 <a href="https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
                                 </a>
                             </div>
                         </div>
@@ -124,10 +125,10 @@ const Work = () => {
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a> */}
                                 <a href="https://passforge.netlify.app" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">App</button>
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaExternalLinkAlt className="inline-block mr-2" />App</button>
                                 </a>
                                 <a href="https://github.com/Abdullahprogramme/Password_Generator" target="_blank" rel="noopener noreferrer">
-                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
                                 </a>
                             </div>
                         </div>
