@@ -6,6 +6,7 @@ import test from "../Assets/test.png";
 import PasswordGenerator from "../Assets/PasswordGenerator.png";
 import ProjectCard1 from "./ProjectCard1";
 import ProjectCard2 from "./ProjectCard2";
+import Weather from "../Assets/Weather.jpg";
 
 const Work = () => {
     return (
@@ -15,6 +16,7 @@ const Work = () => {
                     <p className="text-4xl font-bold inline border-b-4 text-[#416D19] border-pink-300">Work</p>
                     <p className="py-6">/ Check out my previous works. /</p>
                 </div>
+                
                 {/* Container */}
                 <div className="grid sm:grid-cols-2 pl-2 pr-2 md:grid-cols-3 gap-4">
                     
@@ -58,6 +60,15 @@ const Work = () => {
                         description={"Generate strong passwords using this password generator"} 
                         appLink={"https://passforge.netlify.app"} 
                         codeLink={"https://github.com/Abdullahprogramme/Password_Generator"}
+                    />
+                    
+                    {/* Weather App */}
+                    <ProjectCard1 
+                        image={Weather} 
+                        title={"Weather App"} 
+                        description={"Check the weather of any city using this weather app"} 
+                        appLink={"https://skyswift.netlify.app"} 
+                        codeLink={"https://github.com/Abdullahprogramme/Weather-App"}
                     />
 
                 </div>
