@@ -20,42 +20,42 @@ const Skills = () => {
 
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={html} alt="html" />
+                        <img className="img w-20 mx-auto" src={html} alt="html" />
                         <p className="py-4 text-[#B7E5B4]">HTML</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={css} alt="css" />
+                        <img className="img w-20 mx-auto" src={css} alt="css" />
                         <p className="py-4 text-[#B7E5B4]">CSS</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={js} alt="js" />
+                        <img className="img w-20 mx-auto" src={js} alt="js" />
                         <p className="py-4 text-[#B7E5B4]">JavaScript</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={github} alt="github" />
+                        <img className="img w-20 mx-auto" src={github} alt="github" />
                         <p className="py-4 text-[#B7E5B4]">Github</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={git} alt="git" />
+                        <img className="img w-20 mx-auto" src={git} alt="git" />
                         <p className="py-4 text-[#B7E5B4]">Git</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={physics} alt="react" />
+                        <img className="img w-20 mx-auto" src={physics} alt="react" />
                         <p className="py-4 text-[#B7E5B4]">React JS</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={python} alt="python" />
+                        <img className="img w-20 mx-auto" src={python} alt="python" />
                         <p className="py-4 text-[#B7E5B4]">Python</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={tailwind} alt="tailwind" />
+                        <img className="img w-20 mx-auto" src={tailwind} alt="tailwind" />
                         <p className="py-4 text-[#B7E5B4]">Tailwind CSS</p>
                     </div>
                 </div>
