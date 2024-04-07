@@ -11,7 +11,7 @@ const NavBar = () => {
 
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300" style={{ zIndex: 1000 }}>
-            <div>
+            <div className="insta">
                 <a href="https://www.instagram.com/abdullahtariq62/?next=%2F&hl=en" target="_blank" rel="noopener noreferrer">
                     <img src={man} alt="abdullah" style={{width: '50px'}}/>
                 </a>
