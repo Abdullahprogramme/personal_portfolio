@@ -67,3 +67,23 @@
         top: 5px;
     }
 }
+
+@keyframes hover {
+    0% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(-5px);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+
+.insta {
+    animation: hover 2s ease-in-out infinite;
+}
+
+.img {
+    animation: hover 2s ease-in-out infinite;
+}
