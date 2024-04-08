@@ -87,3 +87,31 @@
 .img {
     animation: hover 2s ease-in-out infinite;
 }
+
+@layer components {
+    .border-animation {
+      position: relative;
+      overflow: hidden;
+    }
+    .border-animation::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #D53F8C; /* pink-300 */
+      transition: all 0.3s;
+    }
+    .border-animation:hover::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  @layer components {
+    .dim {
+      opacity: 0.5 !important;
+      transition: opacity 0.3s;
+    }
+  }
