@@ -9,6 +9,18 @@ const NavBar = () => {
     const [nav, setnav] = useState(false);
     const handleclick = () => setnav(!nav);
 
+    const [activeLink, setActiveLink] = useState(null);
+
+    const handleMouseOver = (index) => {
+        setActiveLink(index);
+    };
+
+    const handleMouseOut = () => {
+        setActiveLink(null);
+    };
+
+    const links = ['Home', 'About', 'Skills', 'Work', 'Contact']; // replace with your actual links
+
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300" style={{ zIndex: 1000 }}>
             <div className="insta">
@@ -19,22 +31,39 @@ const NavBar = () => {
 
             {/* menu */}
             <ul className="hidden custom:flex">
-                <li>
-                    <Link to="home" duration={500} smooth={true}>Home</Link>
-                </li>
-                <li>
-                    <Link to="about" duration={500} smooth={true}>About</Link>
-                </li>
-                <li>
-                    <Link to="skills" duration={500} smooth={true}>Skills</Link>
-                </li>
-                <li>
-                    <Link to="work" duration={500} smooth={true}>Work</Link>
-                </li>
-                <li>
-                    <Link to="contact" duration={500} smooth={true}>Contact</Link>
-                </li>
+                {links.map((link, index) => (
+                    <li key={index}>
+                    <Link
+                        to={link.charAt(0).toLowerCase() + link.slice(1)}
+                        duration={500}
+                        smooth={true}
+                        className={`border-animation ${activeLink !== null && activeLink !== index && 'dim'}`}
+                        onMouseOver={() => handleMouseOver(index)}
+                        onMouseOut={handleMouseOut}
+                    >
+                        {link}
+                    </Link>
+                    </li>
+                ))}
             </ul>
+
+            {/* <ul className="hidden custom:flex">
+                <li>
+                    <Link to="home" duration={500} smooth={true} className="border-animation">Home</Link>
+                </li>
+                <li>
+                    <Link to="about" duration={500} smooth={true} className="border-animation">About</Link>
+                </li>
+                <li>
+                    <Link to="skills" duration={500} smooth={true} className="border-animation">Skills</Link>
+                </li>
+                <li>
+                    <Link to="work" duration={500} smooth={true} className="border-animation">Work</Link>
+                </li>
+                <li>
+                    <Link to="contact" duration={500} smooth={true} className="border-animation">Contact</Link>
+                </li>
+            </ul> */}
 
             <div onClick={handleclick} className="custom:hidden z-10">
                 {!nav ? <FaBars /> : <FaTimes />}
