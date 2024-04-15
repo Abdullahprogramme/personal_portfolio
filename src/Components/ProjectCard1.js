@@ -11,6 +11,7 @@ const ProjectCard1 = ({ image, title, description, appLink, codeLink, detailed }
     return (
         <div style={{backgroundImage: `url(${image})`}} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div relative">
             <div className={`opacity-0 group-hover:opacity-100 ${showDetails ? 'hidden' : ''}`}>
+                <button onClick={toggleDetails} className="absolute top-0 right-0 m-2 text-black font-bold text-lg"><FaInfoCircle /></button>
                 <div className="text-center">
                     <span className="text-2xl font-bold text-white tracking-wider">{title}</span>
                 </div>
@@ -26,7 +27,6 @@ const ProjectCard1 = ({ image, title, description, appLink, codeLink, detailed }
                     <a href={codeLink} target="_blank" rel="noopener noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaGithub className="inline-block mr-2" />Code</button>
                     </a>
-                    <button onClick={toggleDetails} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"><FaInfoCircle className="inline-block mr-2" />Details</button>
                 </div>
 
             </div>
