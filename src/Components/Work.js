@@ -91,13 +91,14 @@ const Work = () => {
                     />
 
                     {/* QuadTree application */}
-                    <ProjectCard2 
+                    <ProjectCard1 
                         image={QuadTree}
                         title={"QuadTree application"}
                         description={"Compress images using QuadTree algorithm in Python"} 
+                        appLink={"https://quadracompress.streamlit.app/"}
                         codeLink={"https://github.com/Abdullahprogramme/DSA-Project"}
-                        detailed={"This is an image compression application made using the QuadTree algorithm in Python. The user can compress images using the QuadTree algorithm. The frontend is made using PyQT5. The user can see the download the compressed image and view the original and compressed image."}
-                        />
+                        detailed={"This is an image compression application made using the QuadTree algorithm in Python. The user can compress images using the QuadTree algorithm. The frontend is made using PyQT5. The app's front-end is made using streamlit. The user can see the download the compressed image and view the original and compressed image."}
+                    />
                 </div>
             </div>
         </div>
