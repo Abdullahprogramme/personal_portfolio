@@ -7,6 +7,7 @@ import html from "../Assets/html.png";
 import css from "../Assets/css.png";
 import python from "../Assets/python.png";
 import tailwind from "../Assets/tailwind.png";
+import materialsui from "../Assets/materialsui.png";
 
 const Skills = () => {
     return (
@@ -58,6 +59,12 @@ const Skills = () => {
                         <img className="img w-20 mx-auto" src={tailwind} alt="tailwind" />
                         <p className="py-4 text-[#B7E5B4]">Tailwind CSS</p>
                     </div>
+
+                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                        <img className="img w-20 mx-auto" src={materialsui} alt="tailwind" />
+                        <p className="py-4 text-[#B7E5B4]">Materials uI</p>
+                    </div>
+
                 </div>
             </div>
         </div>
