@@ -62,7 +62,7 @@ const Skills = () => {
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="img w-20 mx-auto" src={materialsui} alt="tailwind" />
-                        <p className="py-4 text-[#B7E5B4]">Materials uI</p>
+                        <p className="py-4 text-[#B7E5B4]">Materials UI</p>
                     </div>
 
                 </div>
