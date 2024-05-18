@@ -18,7 +18,7 @@ const Certifications = () => {
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-4">
                         <h2 className="text-2xl text-[#B7E5B4]">Elements Of AI</h2>
-                        <p className="py-4 text-[#B7E5B4]">University Of helsinki, Nov 2023</p>
+                        <p className="py-4 text-[#B7E5B4]">University Of Helsinki, Nov 2023</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-4">
