@@ -12,18 +12,18 @@ const Education = () => {
 
                 <div className="w-full text-center py-8">
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <h2 className="text-2xl text-[#B7E5B4]">Bachelor's Degree in Computer Science</h2>
-                        <p className="py-4 text-[#B7E5B4]">Habib University, 2023 - 2027</p>
+                        <h2 className="text-2xl text-white">Bachelor's Degree in Computer Science</h2>
+                        <p className="py-4 text-white">Habib University, 2023 - 2027</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-4">
-                        <h2 className="text-2xl text-[#B7E5B4]">A-Levels</h2>
-                        <p className="py-4 text-[#B7E5B4]">The City School - Gulshan A-Levels, 2021 - 2023</p>
+                        <h2 className="text-2xl text-white">A-Levels</h2>
+                        <p className="py-4 text-white">The City School - Gulshan A-Levels, 2021 - 2023</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-4">
-                        <h2 className="text-2xl text-[#B7E5B4]">O-Levels</h2>
-                        <p className="py-4 text-[#B7E5B4]">The City School - Boys Campus A, 2016 - 2021</p>
+                        <h2 className="text-2xl text-white">O-Levels</h2>
+                        <p className="py-4 text-white">The City School - Boys Campus A, 2016 - 2021</p>
                     </div>
                 </div>
             </div>
