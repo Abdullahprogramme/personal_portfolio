@@ -12,18 +12,18 @@ const Certifications = () => {
 
                 <div className="w-full text-center py-8">
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <h2 className="text-2xl text-[#B7E5B4]">Python For Everybody</h2>
-                        <p className="py-4 text-[#B7E5B4]">Coursera, Sep 2022</p>
+                        <h2 className="text-2xl text-white">Python For Everybody</h2>
+                        <p className="py-4 text-white">Coursera, Sep 2022</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-4">
-                        <h2 className="text-2xl text-[#B7E5B4]">Elements Of AI</h2>
-                        <p className="py-4 text-[#B7E5B4]">University Of Helsinki, Nov 2023</p>
+                        <h2 className="text-2xl text-white">Elements Of AI</h2>
+                        <p className="py-4 text-white">University Of Helsinki, Nov 2023</p>
                     </div>
 
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-4">
-                        <h2 className="text-2xl text-[#B7E5B4]">Problem Solving</h2>
-                        <p className="py-4 text-[#B7E5B4]">Hackerrank, Oct 2023</p>
+                        <h2 className="text-2xl text-white">Problem Solving</h2>
+                        <p className="py-4 text-white">Hackerrank, Oct 2023</p>
                     </div>
 
                 </div>
