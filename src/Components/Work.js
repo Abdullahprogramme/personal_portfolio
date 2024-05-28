@@ -59,7 +59,7 @@ const Work = () => {
                     <ProjectCard1 
                         image={Movie}
                         title={"Movie Recommendation App"}
-                        description={"Get movie recommendations based on your favourite genre"}
+                        description={"Get movie recommendations based on your preferences"}
                         appLink={"https://cine-choice.netlify.app/"} 
                         codeLink={"https://github.com/Abdullahprogramme/Movie-Recommender"}
                         detailed={"This is a movie recommendation application made using React JS, Materials UI and Tailwind CSS. The user can get movie recommendations based on their chosen genre, period and so on. The user can see the movie details and the overview of the movie. Provides signup and login functionality."}
