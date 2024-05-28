@@ -8,7 +8,8 @@ import ProjectCard1 from "./ProjectCard1";
 import ProjectCard2 from "./ProjectCard2";
 import Weather from "../Assets/Weather.jpg";
 import QuadTree from "../Assets/QuadTree.png";
-
+import Movie from "../Assets/Movie.jpg";
+ 
 const Work = () => {
     return (
         <div name='work' className="w-full min-h-screen text-gray-300 bg-[#0a192f]">
@@ -54,6 +55,16 @@ const Work = () => {
                         codeLink={"https://github.com/Abdullahprogramme/Weather-App"}
                         detailed={"This is a weather application made using React JS. It shows the weather of any city in the world. The user can search for the city and get the weather details of the city. The user can see the temperature, humidity, and weather condition of the city. Also, the user can see the weather forecast for the next 5 days."}
                     />
+
+                    <ProjectCard1 
+                        image={Movie}
+                        title={"Movie Recommendation App"}
+                        description={"Get movie recommendations based on your favourite genre"}
+                        appLink={"https://cine-choice.netlify.app/"} 
+                        codeLink={"https://github.com/Abdullahprogramme/Movie-Recommender"}
+                        detailed={"This is a movie recommendation application made using React JS, Materials UI and Tailwind CSS. The user can get movie recommendations based on their chosen genre, period and so on. The user can see the movie details and the overview of the movie. Provides signup and login functionality."}
+                    />
+
                 </div>
 
                 {/* Python Heading */}
