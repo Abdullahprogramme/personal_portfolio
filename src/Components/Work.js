@@ -4,8 +4,7 @@ import space from "../Assets/space.png";
 import Password from "../Assets/Password.jpg";
 import test from "../Assets/test.png";
 import PasswordGenerator from "../Assets/PasswordGenerator.png";
-import ProjectCard1 from "./ProjectCard1";
-import ProjectCard2 from "./ProjectCard2";
+import ProjectCard from "./ProjectCard";
 import Weather from "../Assets/Weather.jpg";
 import QuadTree from "../Assets/QuadTree.png";
 import Movie from "../Assets/Movie.jpg";
@@ -27,7 +26,7 @@ const Work = () => {
                 {/* React JS Projects */}
                 <div className="grid sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4">
                     {/* BMI calculator */}
-                    <ProjectCard1 
+                    <ProjectCard 
                         image={BMI} 
                         title={"BMI Calculator"} 
                         // description={"Check your body mass index and seek advice"} 
@@ -37,7 +36,7 @@ const Work = () => {
                     />
 
                     {/* Password generator */}
-                    <ProjectCard1 
+                    <ProjectCard 
                         image={PasswordGenerator} 
                         title={"Password Generator"} 
                         // description={"Generate strong passwords using this password generator"} 
@@ -47,7 +46,7 @@ const Work = () => {
                     />
                     
                     {/* Weather App */}
-                    <ProjectCard1 
+                    <ProjectCard 
                         image={Weather} 
                         title={"Weather App"} 
                         // description={"Check the weather of any city using this weather app"} 
@@ -56,7 +55,7 @@ const Work = () => {
                         detailed={"This is a weather application made using React JS. It shows the weather of any city in the world. The user can search for the city and get the weather details of the city. The user can see the temperature, humidity, and weather condition of the city. Also, the user can see the weather forecast for the next 5 days."}
                     />
 
-                    <ProjectCard1 
+                    <ProjectCard
                         image={Movie}
                         title={"Movie Recommender"}
                         // description={"Get movie recommendations based on your favourite genre"}
@@ -75,7 +74,7 @@ const Work = () => {
                 {/* Python Projects */}
                 <div className="grid sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4">
                     {/* Tkinter application */}
-                    <ProjectCard2 
+                    <ProjectCard 
                         image={test} 
                         title={"Tkinter application"} 
                         // description={"Test your knowledge by this interactive quiz"} 
@@ -84,7 +83,7 @@ const Work = () => {
                     />
                     
                     {/* Password manager */}
-                    <ProjectCard2 
+                    <ProjectCard
                         image={Password} 
                         title={"Password manager"} 
                         // description={"Store your passwords securely by this password manager"} 
@@ -93,7 +92,7 @@ const Work = () => {
                     />
                     
                     {/* Pygame application */}
-                    <ProjectCard2 
+                    <ProjectCard
                         image={space} 
                         title={"Pygame application"} 
                         // description={"A retro game of space invaders using Pygame"} 
@@ -102,7 +101,7 @@ const Work = () => {
                     />
 
                     {/* QuadTree application */}
-                    <ProjectCard1 
+                    <ProjectCard
                         image={QuadTree}
                         title={"QuadTree application"}
                         // description={"Compress images using QuadTree algorithm in Python"} 
