@@ -25,12 +25,12 @@ const Work = () => {
                 </div>
 
                 {/* React JS Projects */}
-                <div className="grid sm:grid-cols-2 pl-2 pr-2 md:grid-cols-3 gap-4">
+                <div className="grid sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4">
                     {/* BMI calculator */}
                     <ProjectCard1 
                         image={BMI} 
-                        title={"React JS application"} 
-                        description={"Check your body mass index and seek advice"} 
+                        title={"BMI Calculator"} 
+                        // description={"Check your body mass index and seek advice"} 
                         appLink={"https://check-body-mass-index.netlify.app/"} 
                         codeLink={"https://github.com/Abdullahprogramme/BMI-calculator"}
                         detailed={"This is a BMI calculator application made using React JS. It calculates the BMI of the user and gives advice based on the BMI. The user can get advice on how to maintain their BMI and stay healthy."}
@@ -40,7 +40,7 @@ const Work = () => {
                     <ProjectCard1 
                         image={PasswordGenerator} 
                         title={"Password Generator"} 
-                        description={"Generate strong passwords using this password generator"} 
+                        // description={"Generate strong passwords using this password generator"} 
                         appLink={"https://passforge.netlify.app"} 
                         codeLink={"https://github.com/Abdullahprogramme/Password_Generator"}
                         detailed={"This is a password generator application made using React JS. It generates strong passwords for the user. The user can select the length of the password and choose to include numbers, symbols, and uppercase letters. The user can also copy the password to the clipboard and change the theme of the application."}
@@ -50,7 +50,7 @@ const Work = () => {
                     <ProjectCard1 
                         image={Weather} 
                         title={"Weather App"} 
-                        description={"Check the weather of any city using this weather app"} 
+                        // description={"Check the weather of any city using this weather app"} 
                         appLink={"https://skyswift.netlify.app"} 
                         codeLink={"https://github.com/Abdullahprogramme/Weather-App"}
                         detailed={"This is a weather application made using React JS. It shows the weather of any city in the world. The user can search for the city and get the weather details of the city. The user can see the temperature, humidity, and weather condition of the city. Also, the user can see the weather forecast for the next 5 days."}
@@ -58,8 +58,8 @@ const Work = () => {
 
                     <ProjectCard1 
                         image={Movie}
-                        title={"Movie Recommendation App"}
-                        description={"Get movie recommendations based on your preferences"}
+                        title={"Movie Recommender"}
+                        // description={"Get movie recommendations based on your favourite genre"}
                         appLink={"https://cine-choice.netlify.app/"} 
                         codeLink={"https://github.com/Abdullahprogramme/Movie-Recommender"}
                         detailed={"This is a movie recommendation application made using React JS, Materials UI and Tailwind CSS. The user can get movie recommendations based on their chosen genre, period and so on. The user can see the movie details and the overview of the movie. Provides signup and login functionality."}
@@ -73,12 +73,12 @@ const Work = () => {
                 </div>
 
                 {/* Python Projects */}
-                <div className="grid sm:grid-cols-2 pl-2 pr-2 md:grid-cols-3 gap-4">
+                <div className="grid sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4">
                     {/* Tkinter application */}
                     <ProjectCard2 
                         image={test} 
                         title={"Tkinter application"} 
-                        description={"Test your knowledge by this interactive quiz"} 
+                        // description={"Test your knowledge by this interactive quiz"} 
                         codeLink={"https://github.com/Abdullahprogramme/APS-Project/"}
                         detailed={"This is a quiz application made using Tkinter in Python. The user can test their knowledge by answering the questions in the quiz. The questions are randomly selected from a set of questions. The user can see their score at the end of the quiz."}
                     />
@@ -87,7 +87,7 @@ const Work = () => {
                     <ProjectCard2 
                         image={Password} 
                         title={"Password manager"} 
-                        description={"Store your passwords securely by this password manager"} 
+                        // description={"Store your passwords securely by this password manager"} 
                         codeLink={"https://github.com/Abdullahprogramme/additonal-programs/blob/main/password%20manager.py"}
                         detailed={"This is a password manager application made using Python. The user can store their passwords securely in the password manager. The user can add, view, and delete passwords. The passwords are stored in a text file."}
                     />
@@ -96,7 +96,7 @@ const Work = () => {
                     <ProjectCard2 
                         image={space} 
                         title={"Pygame application"} 
-                        description={"A retro game of space invaders using Pygame"} 
+                        // description={"A retro game of space invaders using Pygame"} 
                         codeLink={"https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders"}
                         detailed={"This is a game application made using Pygame in Python. The user can play a retro game of space invaders. The user can move the spaceship and shoot the aliens. The user can see their score live on the screen."}
                     />
@@ -105,7 +105,7 @@ const Work = () => {
                     <ProjectCard1 
                         image={QuadTree}
                         title={"QuadTree application"}
-                        description={"Compress images using QuadTree algorithm in Python"} 
+                        // description={"Compress images using QuadTree algorithm in Python"} 
                         appLink={"https://quadracompress.streamlit.app/"}
                         codeLink={"https://github.com/Abdullahprogramme/DSA-Project"}
                         detailed={"This is an image compression application made using the QuadTree algorithm in Python. The user can compress images using the QuadTree algorithm. The frontend is made using PyQT5. The app's front-end is made using streamlit. The user can see the download the compressed image and view the original and compressed image."}
