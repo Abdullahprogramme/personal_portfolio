@@ -86,6 +86,9 @@ import css from "../Assets/css.png";
 import python from "../Assets/python.png";
 import tailwind from "../Assets/tailwind.png";
 import materialsui from "../Assets/materialsui.png";
+import ReactNative from "../Assets/ReactNative.png";
+import typescript from "../Assets/typescript.png";
+import vscode from "../Assets/vscode.png";
 
 const Skills = () => {
     const skills = [
@@ -97,7 +100,10 @@ const Skills = () => {
         {src: physics, alt: "react", name: "React JS"},
         {src: python, alt: "python", name: "Python"},
         {src: tailwind, alt: "tailwind", name: "Tailwind CSS"},
-        {src: materialsui, alt: "materialsui", name: "Materials UI"}
+        {src: materialsui, alt: "materialsui", name: "Materials UI"},
+        {src: ReactNative, alt: "reactnative", name: "React Native"},
+        {src: typescript, alt: "typescript", name: "TypeScript"},
+        {src: vscode, alt: "vscode", name: "VS Code"}
     ];
 
     const [slidesToShow, setSlidesToShow] = useState(3);
