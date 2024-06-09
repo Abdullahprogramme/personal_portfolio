@@ -9,7 +9,7 @@ const Home = () => {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Web Developer", "Coder", "Front-end developer", "Gamer", "Tech Enthusiast", "Learner"],
+            strings: ["Web Developer", "Coder", "Front-end Developer",  "React Developer", "Gamer", "Tech Enthusiast", "Learner"],
             typeSpeed: 40,
             backSpeed: 50,
             loop: true,
@@ -20,9 +20,9 @@ const Home = () => {
             typed.destroy();
         };
     }, []);
+
     return (
         <div name='home' className="w-full h-screen bg-[#0a192f]">
-            
             {/* container */}
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
                 <p className="text-pink-500 animate-pulse font-bold text-2xl">Hi, My name is</p>
