@@ -5,6 +5,7 @@ const Contact = () => {
     const [nameValid, setNameValid] = useState(true);
     const [emailValid, setEmailValid] = useState(true);
     const [messageValid, setMessageValid] = useState(true);
+    const [isEmailSent, setIsEmailSent] = useState('');
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -24,15 +25,22 @@ const Contact = () => {
                 setMessageValid(true);
             }, 3000);
             return;
-        }
+        } else {
 
         emailjs.sendForm('service_jd1hfxr', 'template_1soq30a', e.target, 'F1t6wzZHNWALWRlqi')
             .then((result) => {
-                console.log(result.text);
+                setIsEmailSent('Email sent successfully');
+                setTimeout(() => {
+                    setIsEmailSent('');
+                } , 5000);
             }, (error) => {
-                console.log(error.text);
+                setIsEmailSent('Email not sent');
+                setTimeout(() => {
+                    setIsEmailSent('');
+                } , 5000);
             });
         e.target.reset();
+        }
     }
 
     return (
@@ -45,6 +53,7 @@ const Contact = () => {
                     <input className={`bg-[#ccd6f6] p-2 placeholder-black ${!nameValid ? 'border-red-500 border-2' : ''}`} type="text" placeholder="Name" name="name" />
                     <input className={`my-4 p-2 bg-[#ccd6f6] placeholder-black ${!emailValid ? 'border-red-500 border-2' : ''}`} type="text" placeholder="Email" name="email" />
                     <textarea className={`bg-[#ccd6f6] p-2 placeholder-black ${!messageValid ? 'border-red-500 border-2' : ''}`} name="message" placeholder="Message" style={{ resize: 'vertical', maxHeight: '250px', minHeight: '100px' }}></textarea>
+                    {isEmailSent && <p className="text-white text-center pt-2">{isEmailSent}</p>}
                     <button className="text-white border-2 hover:bg-pink-500 hover:border-pink-500 px-4 py-3 my-8 mx-auto flex items-center">Send</button>
                 </form>
                 <p className="font-bold text-2xl text-[#416D19] hover:text-pink-500">
