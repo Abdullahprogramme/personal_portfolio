@@ -6,6 +6,7 @@ import Work from './Components/Work';
 import Contact from './Components/Contact';
 import Education from './Components/Education';
 import Certifications from './Components/Certifications';
+import LanguagesAndInterests from './Components/LanguagesAndInterests';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Home />
       <About />
+      <LanguagesAndInterests />
       <Education />
       <Certifications />
       <Skills />
