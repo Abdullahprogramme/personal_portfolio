@@ -15,7 +15,7 @@
 //             {/* container */}
 //             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
 //                 <div>
-//                     <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Experience</p>
+//                     <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Technology Stack</p>
 //                     <p className="py-4">/ Some technologies I am familiar with. /</p>
 //                 </div>
 
