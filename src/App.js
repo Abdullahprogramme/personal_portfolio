@@ -7,6 +7,7 @@ import Contact from './Components/Contact';
 import Education from './Components/Education';
 import Certifications from './Components/Certifications';
 import LanguagesAndInterests from './Components/LanguagesAndInterests';
+import Experience from './Components/Experience';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <LanguagesAndInterests />
       <Education />
+      <Experience />
       <Certifications />
       <Skills />
       <Work />
