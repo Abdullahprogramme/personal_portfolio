@@ -19,7 +19,7 @@ const NavBar = () => {
         setActiveLink(null);
     };
 
-    const links = ['Home', 'About', 'Education', 'Certifications', 'Skills', 'Work', 'Contact']; // replace with your actual links
+    const links = ['Home', 'About', 'Education', 'Experience', 'Skills', 'Work', 'Contact']; // replace with your actual links
 
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300" style={{ zIndex: 1000 }}>
@@ -81,7 +81,7 @@ const NavBar = () => {
                     <Link onClick={handleclick} to="education" duration={500} smooth={true}>Education</Link>
                 </li>
                 <li className="py-6 text-3xl ">
-                    <Link onClick={handleclick} to="certifications" duration={500} smooth={true}>Certifications</Link>
+                    <Link onClick={handleclick} to="experience" duration={500} smooth={true}>Experience</Link>
                 </li>
                 <li className="py-6 text-3xl ">
                     <Link onClick={handleclick} to="skills" duration={500} smooth={true}>Skills</Link>
