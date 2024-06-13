@@ -2,6 +2,7 @@ import React from 'react';
 import GitHubCalendar from 'react-github-calendar';
 
 const GitHubLeetCodeStats = () => {
+    const leetCodeUsername = 'Abdullah_Tariq';
 
     return (
         <div className='w-full bg-[#0a192f] text-gray-300'>
@@ -12,6 +13,14 @@ const GitHubLeetCodeStats = () => {
                     blockSize={15} 
                     blockMargin={5} 
                     loadingDataText='Loading Data...'
+                    theme={{
+                        light: ['#d5f4e6', '#81A263', '#059212', '#9BEC00', '#06D001'],
+                        dark: ['#ececec', '#d6e685', '#8cc665', '#44a340', '#1e6823']
+                    }}
+                />
+                <img 
+                    src={`https://img.shields.io/badge/LeetCode-${leetCodeUsername}-green`} 
+                    alt="LeetCode badge" 
                 />
             </div>
         </div>
