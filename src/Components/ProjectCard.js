@@ -3,7 +3,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectCard = ({ image, title, detailed, appLink = '', codeLink }) => {
     return (
-        <div className="shadow-lg rounded-md overflow-hidden group container mx-auto relative bg-gray-800 text-white flex flex-col">
+        <div className="shadow-lg rounded-md border-[#416D19] border-2 overflow-hidden group container mx-auto relative bg-gray-800 text-white flex flex-col">
             <div className="flex-grow">
                 <img src={image} alt={title} className="w-full h-64 object-cover" />
                 <div className="p-4">
