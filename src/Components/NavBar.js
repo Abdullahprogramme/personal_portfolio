@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import man from '../Assets/man.png';
+// import man from '../Assets/man.png';
 import {FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
@@ -25,7 +25,8 @@ const NavBar = () => {
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300" style={{ zIndex: 1000 }}>
             <div className="insta">
                 <a href="https://www.instagram.com/abdullahtariq62/?next=%2F&hl=en" target="_blank" rel="noopener noreferrer">
-                    <img src={man} alt="abdullah" style={{width: '50px'}}/>
+                    {/* <img src={man} alt="abdullah" style={{width: '50px'}}/> */}
+                    <p className="customFontStyle text-4xl text-gray-300">AT</p>
                 </a>
             </div>
 
