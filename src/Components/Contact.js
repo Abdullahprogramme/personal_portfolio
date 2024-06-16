@@ -56,9 +56,9 @@ const Contact = () => {
                     {isEmailSent && <p className="text-white text-center pt-2">{isEmailSent}</p>}
                     <button className="text-white border-2 hover:bg-pink-500 hover:border-pink-500 px-4 py-3 my-8 mx-auto flex items-center">Send</button>
                 </form>
-                <p className="font-bold text-2xl text-[#416D19] hover:text-pink-500">
+                {/* <p className="font-bold text-2xl text-[#416D19] hover:text-pink-500">
                     / Thank you for visiting my portfolio. I hope you liked it. /
-                </p>
+                </p> */}
             </div>
     );
 };
