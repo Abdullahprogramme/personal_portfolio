@@ -9,6 +9,7 @@ import Certifications from './Components/Certifications';
 import LanguagesAndInterests from './Components/LanguagesAndInterests';
 import Experience from './Components/Experience';
 import Progress from './Components/Progress';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Skills />
       <Work />
       <Contact />
+      <Footer />
     </div>
   );
 }
