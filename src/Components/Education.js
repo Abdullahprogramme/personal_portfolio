@@ -12,7 +12,7 @@ const Education = () => {
                 </div>
 
                 <div className="w-full text-center py-8">
-                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 flex items-center">
+                    <div className="shadow-md shadow-[#040c16] hover:translate-y-2 duration-500 flex items-center">
                         <FaGraduationCap className="text-5xl pl-2" />
                         <div className="text-center flex-grow">
                             <h2 className="text-2xl text-white">Bachelor's Degree in Computer Science</h2>
@@ -20,7 +20,7 @@ const Education = () => {
                         </div>
                     </div>
 
-                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-4 flex items-center">
+                    <div className="shadow-md shadow-[#040c16] hover:translate-y-2 duration-500 mt-4 flex items-center">
                         <FaUniversity className="text-5xl pl-2" />
                         <div className="text-center flex-grow">
                             <h2 className="text-2xl text-white">A-Levels</h2>
@@ -28,7 +28,7 @@ const Education = () => {
                         </div>
                     </div>
 
-                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-4 flex items-center">
+                    <div className="shadow-md shadow-[#040c16] hover:translate-y-2 duration-500 mt-4 flex items-center">
                         <FaSchool className="text-5xl pl-2" />
                         <div className="text-center flex-grow">
                             <h2 className="text-2xl text-white">O-Levels</h2>
