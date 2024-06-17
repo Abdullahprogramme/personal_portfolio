@@ -145,7 +145,7 @@ const Skills = () => {
 
                 <Slider {...settings} className='mt-20'>
                     {skills.map((skill, index) => (
-                        <div key={index} className='text-center'>
+                        <div key={index} className='text-center hover:-translate-y-1 mt-1 duration-500'>
                             <img className="w-24 h-24 mx-auto" src={skill.src} alt={skill.alt} />
                             <p className="mt-4 text-white text-xl">{skill.name}</p>
                         </div>
