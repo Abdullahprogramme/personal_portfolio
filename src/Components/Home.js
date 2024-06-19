@@ -2,6 +2,29 @@ import React, { useEffect, useRef } from "react";
 import {HiArrowNarrowRight} from 'react-icons/hi';
 import { FaAngleRight } from 'react-icons/fa';
 import {Typed} from "react-typed";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+  
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        ease: "easeOut",
+        duration: 0.5,
+      },
+    },
+  };
 
 const Home = () => {
 
@@ -28,34 +51,44 @@ const Home = () => {
                 <p className="text-pink-500 animate-pulse font-bold text-2xl">Hi, My name is</p>
                 <h1 className="text-4xl sm:text-7xl font-bold text-[#416D19]">Abdullah Tariq</h1>
                 <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]"><span ref={el} className="descriptionTyped" /></h2>
-        
-                <div className="flex flex-col">
-                    <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text" style={{animationDelay: '0.5s'}}>
-                        <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />I'm a front-end developer passionate about creating user-friendly interfaces.
-                        </span>
-                    </p>
-                    <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text" style={{animationDelay: '1s'}}>
-                        <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />My expertise lies in crafting seamless and responsive web experiences. 
-                        </span>
-                    </p>
-                    <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text" style={{animationDelay: '1.5s'}}>
-                        <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />I bring ideas to life by blending creativity with technical know-how. 
-                        </span>
-                    </p>
-                    <p className="text-[#8892b0] py-1 max-w-[700px] paragraph-text" style={{animationDelay: '2s'}}> 
-                        <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />Proficient in React and Python, I have prior experience in both technologies. 
-                        </span>
-                    </p>
-                    <p className="text-[#8892b0] py-1 max-w-[700px] ml-[-0.2rem] lg:ml-0 paragraph-text" style={{animationDelay: '2.5s'}}>
-                        <span className="flex sm:items-start md:items-start lg:items-center">
-                            <FaAngleRight className="mr-1.5 lg:mr-2 text-[#416D19] arrow-icon" style={{animationDelay: '4s'}} />Let's collaborate to build something amazing! 
-                        </span>
-                    </p>
-                </div>
+    
+
+                <motion.div
+                    className="flex flex-col"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="visible"
+                    >
+                    <motion.ul>
+                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                            <span className="flex sm:items-start md:items-start lg:items-center">
+                                <FaAngleRight className="mr-2 text-[#416D19]" />I'm a front-end developer passionate about creating user-friendly interfaces.
+                            </span>
+                        </motion.li>
+                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                            <span className="flex sm:items-start md:items-start lg:items-center">
+                                <FaAngleRight className="mr-2 text-[#416D19]" />My expertise lies in crafting seamless and responsive web experiences.
+                            </span>
+                        </motion.li>
+                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                            <span className="flex sm:items-start md:items-start lg:items-center">
+                                <FaAngleRight className="mr-2 text-[#416D19]" />I bring ideas to life by blending creativity with technical know-how.
+                            </span>
+                        </motion.li>
+                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                            <span className="flex sm:items-start md:items-start lg:items-center">
+                                <FaAngleRight className="mr-2 text-[#416D19]" />Proficient in React and Python, I have prior experience in both technologies.
+                            </span>
+                        </motion.li>
+                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                            <span className="flex sm:items-start md:items-start lg:items-center">
+                                <FaAngleRight className="mr-2 text-[#416D19]" />Let's collaborate to build something amazing!
+                            </span>
+                        </motion.li>
+
+                    </motion.ul>
+                </motion.div>
+
                  
 
                 <div>
