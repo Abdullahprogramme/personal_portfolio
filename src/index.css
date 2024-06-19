@@ -31,33 +31,6 @@
     }
 }
 
-.arrow-icon {
-    animation: slideInFromLeft 1s ease-in-out infinite;
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.paragraph-text {
-    opacity: 0;
-    animation: slideInFromRight 1s ease-out forwards;
-}
-
-@media (max-width: 1030px) {
-    .arrow-icon {
-        position: relative;
-        top: 5px;
-    }
-}
-
 @keyframes hover {
     0% {
         transform: translatey(0);
