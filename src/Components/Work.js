@@ -12,7 +12,8 @@ import TicTacToe from "../Assets/TicTacToe.jpg";
 import StopWatch from "../Assets/StopWatch.jpg";
 import Calculator from "../Assets/Calculator.jpg";
 import QRcode from "../Assets/QRcode.jpg";
- 
+import ToDoList from "../Assets/ToDoList.jpg";
+
 const Work = () => {
     return (
         <div name='work' className="w-full min-h-screen text-gray-300 bg-[#0a192f]">
