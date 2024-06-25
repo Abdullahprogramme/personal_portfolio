@@ -26,6 +26,12 @@ const containerVariants = {
     },
   };
 
+  const textVariants = {
+    initial: { y: -20, opacity: 0 },
+    animate: { y: 0, opacity: 1, transition: { type: 'spring', stiffness: 100, damping: 5 } },
+    whileHover: { scale: 1.1, color: "#f08", transition: { yoyo: Infinity, duration: 0.3 } },
+  };
+
 const Home = () => {
 
     const el = useRef(null);
@@ -48,7 +54,16 @@ const Home = () => {
         <div name='home' className="w-full h-screen bg-[#0a192f]">
             {/* container */}
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-                <p className="text-pink-500 animate-pulse font-bold text-2xl">Hi, My name is</p>
+                {/* <p className="text-pink-500 animate-pulse font-bold text-2xl">Hi, My name is</p> */}
+                <motion.p
+                    className="text-pink-500 font-bold text-2xl"
+                    variants={textVariants} // Apply variants
+                    initial="initial"
+                    animate="animate"
+                    whileHover="whileHover"
+                >
+                    Hi, My name is
+                </motion.p>
                 <h1 className="text-4xl sm:text-7xl font-bold text-[#416D19]">Abdullah Tariq</h1>
                 <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]"><span ref={el} className="descriptionTyped" /></h2>
     
