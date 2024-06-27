@@ -3,6 +3,7 @@ import {HiArrowNarrowRight} from 'react-icons/hi';
 import { FaAngleRight } from 'react-icons/fa';
 import {Typed} from "react-typed";
 import { motion } from "framer-motion";
+import ThreeBackground from "./bg";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -52,11 +53,12 @@ const Home = () => {
 
     return (
         <div name='home' className="w-full h-screen bg-[#0a192f]">
+            <ThreeBackground />
             {/* container */}
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
                 {/* <p className="text-pink-500 animate-pulse font-bold text-2xl">Hi, My name is</p> */}
                 <motion.p
-                    className="text-pink-500 font-bold text-2xl"
+                    className="text-pink-500 font-bold text-2xl z-10"
                     variants={textVariants} // Apply variants
                     initial="initial"
                     animate="animate"
@@ -106,7 +108,7 @@ const Home = () => {
 
                  
 
-                <div>
+                <div className="z-10">
                     <button className=" text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-500 hover:border-pink-500">View work
                         <span className="group-hover:rotate-90 duration-300">
                             <HiArrowNarrowRight className="ml-3 hover" />
