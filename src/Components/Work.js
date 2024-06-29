@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import BMI from "../Assets/BMI.jpg";
 import space from "../Assets/space.png";
 import Password from "../Assets/Password.jpg";
@@ -15,6 +15,17 @@ import QRcode from "../Assets/QRcode.jpg";
 import ToDoList from "../Assets/ToDoList.jpg";
 
 const Work = () => {
+
+    const types = ['React JS', 'Python', 'React Native', 'All'];
+    const [selectedType, setSelectedType] = React.useState('All');
+    const [animate, setAnimate] = React.useState(false);
+
+    useEffect(() => {
+        setAnimate(false); // Reset animation state
+        const timer = setTimeout(() => setAnimate(true), 10); // Brief delay to reset and apply animation
+        return () => clearTimeout(timer);
+    }, [selectedType]);
+
     return (
         <div name='work' className="w-full min-h-screen text-gray-300 bg-[#0a192f]">
             <div className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full">
@@ -23,15 +34,35 @@ const Work = () => {
                     <p className="py-6">/ Check out my previous works. /</p>
                 </div>
                 
-                {/* React JS Heading */}
-                <div className="pb-4 pl-4">
-                    <p className="text-2xl font-bold inline text-[#416D19]">React JS</p>
+                {/* Filter buttons */}
+                <div className="flex justify-center pb-8 space-x-4">
+                    {types.map((type, index) => (
+                        <button 
+                            key={index} 
+                            onClick={() => setSelectedType(type)} 
+                            className={`px-2 py-1 text-sm font-semibold rounded-lg transition-all duration-150 sm:px-4 sm:py-2 sm:text-lg ${selectedType === type ? 'bg-green-600 text-white shadow-lg shadow-green-600/50' : 'bg-[#0a192f] text-gray-300 border border-gray-700 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50'}`}
+                            style={{
+                                boxShadow: selectedType === type ? '' : 'inset 5px 5px 10px #050f1f, inset -5px -5px 10px #0f2b4f'
+                            }}
+                        >
+                            {type}
+                        </button>
+                    ))}
                 </div>
 
+            
+
+                
+                {/* React JS Heading */}
+                {/* <div className="pb-4 pl-4">
+                    <p className="text-2xl font-bold inline text-[#416D19]">React JS</p>
+                </div> */}
+
                 {/* React JS Projects */}
-                <div className="grid sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4">
+                { selectedType === 'React JS' || selectedType === 'All' ?
+                <div className={`grid pb-8 sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4 ${animate ? 'fadeIn' : ''}`}>
                     {/* BMI calculator */}
-                    <ProjectCard 
+                    <ProjectCard
                         image={BMI} 
                         title={"BMI Calculator"} 
                         // description={"Check your body mass index and seek advice"} 
@@ -60,6 +91,7 @@ const Work = () => {
                         detailed={"This is a weather application made using React JS. It shows the weather of any city in the world. The user can search for the city and get the weather details of the city. The user can see the temperature, humidity, and weather condition of the city. Also, the user can see the weather forecast for the next 5 days."}
                     />
 
+                    {/* Movie Recommender */}
                     <ProjectCard
                         image={Movie}
                         title={"Movie Recommender"}
@@ -70,14 +102,16 @@ const Work = () => {
                     />
 
                 </div>
+                : null }
 
                 {/* Python Heading */}
-                <div className="pb-4 pl-4 pt-8">
+                {/* <div className="pb-4 pl-4 pt-8">
                     <p className="text-2xl font-bold inline text-[#416D19]">Python</p>
-                </div>
+                </div> */}
 
                 {/* Python Projects */}
-                <div className="grid sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4">
+                { selectedType === 'Python' || selectedType === 'All' ?
+                <div className={`grid pb-8 sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4 ${animate ? 'fadeIn' : ''}`}>
                     {/* Tkinter application */}
                     <ProjectCard 
                         image={test} 
@@ -115,14 +149,16 @@ const Work = () => {
                         detailed={"This is an image compression application made using the QuadTree algorithm in Python. The user can compress images using the QuadTree algorithm. The frontend is made using PyQT5. The app's front-end is made using streamlit. The user can see the download the compressed image and view the original and compressed image."}
                     />
                 </div>
+                : null }
 
                 {/* React Native Heading */}
-                <div className="pb-4 pl-4 pt-8">
+                {/* <div className="pb-4 pl-4 pt-8">
                     <p className="text-2xl font-bold inline text-[#416D19]">React Native</p>
-                </div>
+                </div> */}
 
                 {/* React Native Projects */}
-                <div className="grid sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4">
+                { selectedType === 'React Native' || selectedType === 'All' ?
+                <div className={`grid pb-8 sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4 ${animate ? 'fadeIn' : ''}`}>
                     {/* Calculator */}
                     <ProjectCard 
                         image={Calculator}
@@ -168,6 +204,9 @@ const Work = () => {
                         detailed={"This is a to-do list application made using React Native. The user can create a to-do list using this application. The user can add, view, and delete tasks. With a very simple and user-friendly interface, the user can easily manage their tasks."}
                     />
                 </div>
+                : null }
+
+
             </div>
         </div>
     )
