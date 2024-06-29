@@ -77,27 +77,27 @@ const Home = () => {
                     animate="visible"
                     >
                     <motion.ul>
-                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                             <span className="flex sm:items-start md:items-start lg:items-center">
                                 <FaAngleRight className="mr-2 text-[#416D19]" />I'm a front-end developer passionate about creating user-friendly interfaces.
                             </span>
                         </motion.li>
-                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                             <span className="flex sm:items-start md:items-start lg:items-center">
                                 <FaAngleRight className="mr-2 text-[#416D19]" />My expertise lies in crafting seamless and responsive web experiences.
                             </span>
                         </motion.li>
-                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                             <span className="flex sm:items-start md:items-start lg:items-center">
                                 <FaAngleRight className="mr-2 text-[#416D19]" />I bring ideas to life by blending creativity with technical know-how.
                             </span>
                         </motion.li>
-                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                             <span className="flex sm:items-start md:items-start lg:items-center">
                                 <FaAngleRight className="mr-2 text-[#416D19]" />Proficient in React and Python, I have prior experience in both technologies.
                             </span>
                         </motion.li>
-                        <motion.li className="text-[#8892b0] py-1 max-w-[700px]" variants={itemVariants}>
+                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                             <span className="flex sm:items-start md:items-start lg:items-center">
                                 <FaAngleRight className="mr-2 text-[#416D19]" />Let's collaborate to build something amazing!
                             </span>
