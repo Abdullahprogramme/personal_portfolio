@@ -10,12 +10,15 @@ import LanguagesAndInterests from './Components/LanguagesAndInterests';
 import Experience from './Components/Experience';
 import Progress from './Components/Progress';
 import Footer from './Components/Footer';
+import Lottie from './Components/Lottie/lottie';
+
 
 function App() {
   return (
     <div>
       <NavBar />
       <Home />
+      <Lottie />
       <About />
       <LanguagesAndInterests />
       <Progress />
