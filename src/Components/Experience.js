@@ -2,6 +2,10 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css'; // import the styles
 
+// importing lottie animations
+import Experience from './Lottie/Experience.json';
+import DisplayLottie from './Lottie/DisplayLottie';
+
 const Timeline = () => {
     const experiences = [
         { year: 'May 2024', title: 'Summer career Academy', description: 'The Summer Career Academy provided essential industry skills through a comprehensive career curation program featuring experts in various fields. The training encompassed a wide range of topics, including emotional intelligence, leadership, and presentation skills. Additionally, we gained proficiency in Power BI for data manipulation and entry, with clear and effective instruction. We also had the opportunity to meet and learn from industry leaders, enhancing our understanding and preparedness for future careers.', 
@@ -17,6 +21,12 @@ const Timeline = () => {
                 <div>
                     <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Experience</p>
                     <p className="py-4">/ My work experience. /</p>
+                </div>
+            </div>
+
+            <div className='flex justify-center items-center'> {/* Adjusted for centering */}
+                <div className="w-3/4 mx-auto"> {/* Resize and center the Lottie animation */}
+                    <DisplayLottie animationData={Experience} />
                 </div>
             </div>
 
