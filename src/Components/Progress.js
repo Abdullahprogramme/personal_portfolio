@@ -1,5 +1,7 @@
 import React from 'react';
 import GitHubCalendar from 'react-github-calendar';
+import DisplayLottie from './Lottie/DisplayLottie';
+import GitHub from './Lottie/Github.json';
 
 const GitHubLeetCodeStats = () => {
     const leetCodeUsername = 'Abdullah_Tariq';
@@ -8,6 +10,7 @@ const GitHubLeetCodeStats = () => {
         <div className='w-full bg-[#0a192f] text-gray-300'>
             <div className='justify-center items-center flex flex-col py-16 px-2 space-y-5'>
                 <h2 className="text-4xl font-semibold text-[#416D19] text-center">GitHub Contributions</h2>
+                <DisplayLottie animationData={GitHub} />
                 <GitHubCalendar 
                     username="Abdullahprogramme" 
                     blockSize={15} 
