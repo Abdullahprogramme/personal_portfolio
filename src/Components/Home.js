@@ -5,6 +5,10 @@ import {Typed} from "react-typed";
 import { motion } from "framer-motion";
 import ThreeBackground from "./bg";
 
+// import Lottie from 'react-lottie';
+import Space from './Lottie/Space.json';
+import DisplayLottie from './Lottie/DisplayLottie';
+
 const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -43,6 +47,7 @@ const Home = () => {
             typeSpeed: 40,
             backSpeed: 50,
             loop: true,
+            cursorChar: '_',
         });
 
         // Cleanup
@@ -69,42 +74,47 @@ const Home = () => {
                 <h1 className="text-4xl sm:text-7xl font-bold text-[#416D19]">Abdullah Tariq</h1>
                 <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]"><span ref={el} className="descriptionTyped" /></h2>
     
+                <div className="flex flex-row">
+                    <motion.div
+                        className="flex flex-col"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate="visible"
+                        >
+                        <motion.ul>
+                            <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
+                                <span className="flex sm:items-start md:items-start lg:items-center">
+                                    <FaAngleRight className="mr-2 text-[#416D19]" />I'm a front-end developer passionate about creating user-friendly interfaces.
+                                </span>
+                            </motion.li>
+                            <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
+                                <span className="flex sm:items-start md:items-start lg:items-center">
+                                    <FaAngleRight className="mr-2 text-[#416D19]" />My expertise lies in crafting seamless and responsive web experiences.
+                                </span>
+                            </motion.li>
+                            <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
+                                <span className="flex sm:items-start md:items-start lg:items-center">
+                                    <FaAngleRight className="mr-2 text-[#416D19]" />I bring ideas to life by blending creativity with technical know-how.
+                                </span>
+                            </motion.li>
+                            <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
+                                <span className="flex sm:items-start md:items-start lg:items-center">
+                                    <FaAngleRight className="mr-2 text-[#416D19]" />Proficient in React and Python, I have prior experience in both technologies.
+                                </span>
+                            </motion.li>
+                            <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
+                                <span className="flex sm:items-start md:items-start lg:items-center">
+                                    <FaAngleRight className="mr-2 text-[#416D19]" />Let's collaborate to build something amazing!
+                                </span>
+                            </motion.li>
 
-                <motion.div
-                    className="flex flex-col"
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
-                    >
-                    <motion.ul>
-                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
-                            <span className="flex sm:items-start md:items-start lg:items-center">
-                                <FaAngleRight className="mr-2 text-[#416D19]" />I'm a front-end developer passionate about creating user-friendly interfaces.
-                            </span>
-                        </motion.li>
-                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
-                            <span className="flex sm:items-start md:items-start lg:items-center">
-                                <FaAngleRight className="mr-2 text-[#416D19]" />My expertise lies in crafting seamless and responsive web experiences.
-                            </span>
-                        </motion.li>
-                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
-                            <span className="flex sm:items-start md:items-start lg:items-center">
-                                <FaAngleRight className="mr-2 text-[#416D19]" />I bring ideas to life by blending creativity with technical know-how.
-                            </span>
-                        </motion.li>
-                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
-                            <span className="flex sm:items-start md:items-start lg:items-center">
-                                <FaAngleRight className="mr-2 text-[#416D19]" />Proficient in React and Python, I have prior experience in both technologies.
-                            </span>
-                        </motion.li>
-                        <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
-                            <span className="flex sm:items-start md:items-start lg:items-center">
-                                <FaAngleRight className="mr-2 text-[#416D19]" />Let's collaborate to build something amazing!
-                            </span>
-                        </motion.li>
-
-                    </motion.ul>
-                </motion.div>
+                        </motion.ul>
+                        
+                    </motion.div>
+                    <div className="w-[17%] ml-8 hidden md:block">
+                        <DisplayLottie animationData={Space} />
+                    </div>
+                </div>
 
                  
 
