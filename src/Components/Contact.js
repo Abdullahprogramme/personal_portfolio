@@ -77,6 +77,7 @@ const Contact = () => {
     const [emailValid, setEmailValid] = useState(true);
     const [messageValid, setMessageValid] = useState(true);
     const [isEmailSent, setIsEmailSent] = useState('');
+    const [notification, setNotification] = useState({ message: '', type: '' });
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -90,23 +91,29 @@ const Contact = () => {
         setMessageValid(isMessageValid);
 
         if (!isNameValid || !isEmailValid || !isMessageValid) {
+            setNotification({ message: 'Please fill out all the fields', type: 'error' });
             setTimeout(() => {
                 setNameValid(true);
                 setEmailValid(true);
                 setMessageValid(true);
+                setNotification({ message: '', type: '' });
             }, 3000);
             return;
         } else {
             emailjs.sendForm('service_jd1hfxr', 'template_1soq30a', e.target, 'F1t6wzZHNWALWRlqi')
                 .then((result) => {
                     setIsEmailSent('Email sent successfully');
+                    setNotification({ message: 'Email sent successfully', type: 'success' });
                     setTimeout(() => {
                         setIsEmailSent('');
+                        setNotification({ message: '', type: '' });
                     }, 5000);
                 }, (error) => {
                     setIsEmailSent('Email not sent');
+                    setNotification({ message: 'Email not sent', type: 'error' });
                     setTimeout(() => {
                         setIsEmailSent('');
+                        setNotification({ message: '', type: '' });
                     }, 5000);
                 });
             e.target.reset();
@@ -156,6 +163,30 @@ const Contact = () => {
                         <MdSend className="mr-2" /> Send
                     </button>
                 </div>
+
+                {notification.message && (
+                    <div className={`fixed bottom-2 right-2 transform transition-all duration-500 ease-out ${notification.type === 'success' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'} p-4 max-w-sm`}>
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <svg className={`w-5 h-5 mr-2 ${notification.type === 'success' ? 'text-green-200' : 'text-red-200'}`} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                                    {notification.type === 'success' ? (
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    ) : (
+                                        <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    )}
+                                </svg>
+                                <p className="font-semibold text-sm">{notification.message}</p>
+                            </div>
+                            <button onClick={() => setNotification({ message: '', type: '' })} className="ml-4 rounded-md p-1 inline-flex h-6 w-6 justify-center items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-label="Close">
+                                <svg className="w-5 h-5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                )}
+
+
             </form>
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{zIndex: 1}}>
                 <DisplayLottie animationData={Shape} />
