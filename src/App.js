@@ -3,7 +3,7 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Skills from './Components/Skills';
 import Work from './Components/Work';
-import Contact from './Components/Contact';
+import Contact from './Components/Contact/Contact';
 import Education from './Components/Education';
 import Certifications from './Components/Certifications';
 import LanguagesAndInterests from './Components/LanguagesAndInterests';
