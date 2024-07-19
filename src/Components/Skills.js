@@ -15,7 +15,7 @@
 //             {/* container */}
 //             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
 //                 <div>
-//                     <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Technology Stack</p>
+//                     <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Experience</p>
 //                     <p className="py-4">/ Some technologies I am familiar with. /</p>
 //                 </div>
 
@@ -90,11 +90,15 @@ import ReactNative from "../Assets/ReactNative.png";
 import typescript from "../Assets/typescript.png";
 import vscode from "../Assets/vscode.png";
 
+// importing lottie animation files
+import DisplayLottie from './Lottie/DisplayLottie';
+import Prof from './Lottie/Prof.json';
+
 const Skills = () => {
     const skills = [
-        {src: html, alt: "html", name: "HTML"},
-        {src: css, alt: "css", name: "CSS"},
-        {src: js, alt: "js", name: "JavaScript"},
+        {src: html, alt: "html", name: "HTML", proficiency: 70},
+        {src: css, alt: "css", name: "CSS", proficiency: 80},
+        {src: js, alt: "js", name: "JavaScript", proficiency: 70},
         {src: github, alt: "github", name: "Github"},
         {src: git, alt: "git", name: "Git"},
         {src: physics, alt: "react", name: "React JS"},
@@ -102,8 +106,8 @@ const Skills = () => {
         {src: tailwind, alt: "tailwind", name: "Tailwind CSS"},
         {src: materialsui, alt: "materialsui", name: "Materials UI"},
         {src: ReactNative, alt: "reactnative", name: "React Native"},
-        {src: typescript, alt: "typescript", name: "TypeScript"},
-        {src: vscode, alt: "vscode", name: "VS Code"}
+        {src: typescript, alt: "typescript", name: "TypeScript", proficiency: 50},
+        {src: vscode, alt: "vscode", name: "VS Code", proficiency: 90},
     ];
 
     const [slidesToShow, setSlidesToShow] = useState(3);
@@ -132,14 +136,16 @@ const Skills = () => {
         infinite: true,
         speed: 500,
         slidesToShow: slidesToShow,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoPlay: true,
+        autoplaySpeed: 2000,
     };
 
     return (
         <div name='skills' className="w-full min-h-screen bg-[#0a192f] text-gray-300">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div>
-                    <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Experience</p>
+                    <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Technology Stack</p>
                     <p className="py-4">/ Some technologies I am familiar with. /</p>
                 </div>
 
@@ -151,6 +157,31 @@ const Skills = () => {
                         </div>
                     ))}
                 </Slider>
+
+                <div className="mt-10 mb-12 flex items-start">
+                    <div className="w-full">
+                        {skills.map((skill, index) => (
+                            <div key={index} className="mb-2">
+                                {skill.proficiency !== undefined && (
+                                    <>
+                                        <p className="text-white text-lg mb-1">{skill.name}</p>
+                                        <div className="w-full bg-gray-700 rounded-full h-3">
+                                            <div 
+                                                className="bg-green-500 h-3 rounded-full" 
+                                                style={{ width: `${skill.proficiency}%` }}
+                                            ></div>
+                                        </div>
+                                        <p className="text-gray-400 mt-1 text-sm">{skill.proficiency}%</p>
+                                    </>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                    <div className="w-2/4 ml-4 hidden md:block">
+                        <DisplayLottie animationData={Prof} />
+                    </div>
+                </div>
+
             </div>
         </div>
     );
