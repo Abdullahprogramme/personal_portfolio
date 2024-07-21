@@ -102,7 +102,7 @@ const Skills = () => {
         {src: github, alt: "github", name: "Github"},
         {src: git, alt: "git", name: "Git"},
         {src: physics, alt: "react", name: "React JS"},
-        {src: python, alt: "python", name: "Python", proficiency : 90},
+        {src: python, alt: "python", name: "Python", proficiency: 90},
         {src: tailwind, alt: "tailwind", name: "Tailwind CSS"},
         {src: materialsui, alt: "materialsui", name: "Materials UI"},
         {src: ReactNative, alt: "reactnative", name: "React Native"},
