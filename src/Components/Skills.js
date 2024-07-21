@@ -97,7 +97,7 @@ import Prof from './Lottie/Prof.json';
 // importing react icons only of proficiency
 import { FaHtml5, FaCss3, FaJs, FaPython } from 'react-icons/fa';
 import { SiTypescript } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+import { VscVscodeInsiders  } from "react-icons/vsc";
 
 
 const Skills = () => {
@@ -113,7 +113,7 @@ const Skills = () => {
         {src: materialsui, alt: "materialsui", name: "Materials UI"},
         {src: ReactNative, alt: "reactnative", name: "React Native"},
         {src: typescript, alt: "typescript", name: "TypeScript", proficiency: 50 , icon: <SiTypescript />},
-        {src: vscode, alt: "vscode", name: "VS Code", proficiency: 90 , icon: <VscVscode />},
+        {src: vscode, alt: "vscode", name: "VS Code", proficiency: 90 , icon: <VscVscodeInsiders  />},
     ];
 
     const [slidesToShow, setSlidesToShow] = useState(3);
