@@ -94,20 +94,26 @@ import vscode from "../Assets/vscode.png";
 import DisplayLottie from './Lottie/DisplayLottie';
 import Prof from './Lottie/Prof.json';
 
+// importing react icons only of proficiency
+import { FaHtml5, FaCss3, FaJs, FaPython } from 'react-icons/fa';
+import { SiTypescript } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+
+
 const Skills = () => {
     const skills = [
-        {src: html, alt: "html", name: "HTML", proficiency: 70},
-        {src: css, alt: "css", name: "CSS", proficiency: 80},
-        {src: js, alt: "js", name: "JavaScript", proficiency: 70},
+        {src: html, alt: "html", name: "HTML", proficiency: 70, icon: <FaHtml5 />},
+        {src: css, alt: "css", name: "CSS", proficiency: 80 , icon: <FaCss3 />},
+        {src: js, alt: "js", name: "JavaScript", proficiency: 70 , icon: <FaJs />},
         {src: github, alt: "github", name: "Github"},
         {src: git, alt: "git", name: "Git"},
         {src: physics, alt: "react", name: "React JS"},
-        {src: python, alt: "python", name: "Python", proficiency: 90},
+        {src: python, alt: "python", name: "Python", proficiency: 90 , icon: <FaPython />},
         {src: tailwind, alt: "tailwind", name: "Tailwind CSS"},
         {src: materialsui, alt: "materialsui", name: "Materials UI"},
         {src: ReactNative, alt: "reactnative", name: "React Native"},
-        {src: typescript, alt: "typescript", name: "TypeScript", proficiency: 50},
-        {src: vscode, alt: "vscode", name: "VS Code", proficiency: 90},
+        {src: typescript, alt: "typescript", name: "TypeScript", proficiency: 50 , icon: <SiTypescript />},
+        {src: vscode, alt: "vscode", name: "VS Code", proficiency: 90 , icon: <VscVscode />},
     ];
 
     const [slidesToShow, setSlidesToShow] = useState(3);
@@ -164,7 +170,13 @@ const Skills = () => {
                             <div key={index} className="mb-2">
                                 {skill.proficiency !== undefined && (
                                     <>
-                                        <p className="text-white text-lg mb-1">{skill.name}</p>
+                                        <div className="flex items-center">
+                                            <p className="text-white text-lg mb-1">{skill.name}</p>
+                                            {skill.icon && ( 
+                                                <div className="ml-2 mb-1 text-2xl text-green-300">{skill.icon}</div>
+                                            )}
+                                        </div>
+
                                         <div className="w-full bg-gray-700 rounded-full h-3">
                                             <div 
                                                 className="bg-green-500 h-3 rounded-full" 
