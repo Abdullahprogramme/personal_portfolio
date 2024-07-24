@@ -183,7 +183,7 @@ const Skills = () => {
                                                 style={{ width: `${skill.proficiency}%` }}
                                             ></div>
                                         </div>
-                                        <p className="text-gray-400 mt-1 text-sm">{skill.proficiency}%</p>
+                                        {/* <p className="text-gray-400 mt-1 text-sm">{skill.proficiency}%</p> */}
                                     </>
                                 )}
                             </div>
