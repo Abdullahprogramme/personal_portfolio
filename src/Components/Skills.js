@@ -89,6 +89,7 @@ import materialsui from "../Assets/materialsui.png";
 import ReactNative from "../Assets/ReactNative.png";
 import typescript from "../Assets/typescript.png";
 import vscode from "../Assets/vscode.png";
+import Expo from "../Assets/Expo.png";
 
 // importing lottie animation files
 import DisplayLottie from './Lottie/DisplayLottie';
@@ -97,7 +98,7 @@ import Prof from './Lottie/Prof.json';
 // importing react icons only of proficiency
 import { FaHtml5, FaCss3, FaJs, FaPython } from 'react-icons/fa';
 import { SiTypescript } from "react-icons/si";
-import { VscCode } from "react-icons/vsc";
+import { VscCode  } from "react-icons/vsc";
 
 
 const Skills = () => {
@@ -113,7 +114,8 @@ const Skills = () => {
         {src: materialsui, alt: "materialsui", name: "Materials UI"},
         {src: ReactNative, alt: "reactnative", name: "React Native"},
         {src: typescript, alt: "typescript", name: "TypeScript", proficiency: 50 , icon: <SiTypescript />},
-        {src: vscode, alt: "vscode", name: "VS Code", proficiency: 90 , icon: <VscCode />},
+        {src: vscode, alt: "vscode", name: "VS Code", proficiency: 90 , icon: <VscCode  />},
+        {src: Expo, alt: "expo", name: "Expo"},
     ];
 
     const [slidesToShow, setSlidesToShow] = useState(3);
