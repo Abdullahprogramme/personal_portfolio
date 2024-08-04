@@ -6,16 +6,16 @@ const ProjectCard = ({ image, title, detailed, appLink = '', codeLink }) => {
         <div className="max-w-sm bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
             <img className="w-full h-48 object-cover" src={image} alt={title} />
             <div className="p-6 flex flex-col flex-grow">
-                <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
-                <p className="mt-2 text-gray-600 flex-grow">{detailed}</p>
+                <h2 className="text-xl font-bold text-gray-900">{title}</h2>
+                <p className="mt-2 text-gray-700 flex-grow">{detailed}</p>
                 <div className="border-t border-gray-200 my-4"></div>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center space-x-4">
                     {appLink && (
-                        <a href={appLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <a href={appLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-2 bg-indigo-500 text-white text-sm font-medium rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150">
                             <FaExternalLinkAlt className="mr-2" />App
                         </a>
                     )}
-                    <a href={codeLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <a href={codeLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition ease-in-out duration-150">
                         <FaGithub className="mr-2" />Code
                     </a>
                 </div>
