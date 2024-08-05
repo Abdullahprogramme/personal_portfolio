@@ -4,7 +4,7 @@ import DisplayLottie from './Lottie/DisplayLottie';
 import GitHub from './Lottie/Github.json';
 
 const GitHubLeetCodeStats = () => {
-    const leetCodeUsername = 'Abdullah_Tariq';
+    // const leetCodeUsername = 'Abdullah_Tariq';
 
     return (
         <div className='w-full bg-[#0a192f] text-gray-300'>
@@ -21,10 +21,10 @@ const GitHubLeetCodeStats = () => {
                         dark: ['#ececec', '#d6e685', '#8cc665', '#44a340', '#1e6823']
                     }}
                 />
-                <img 
+                {/* <img 
                     src={`https://img.shields.io/badge/LeetCode-${leetCodeUsername}-green`} 
                     alt="LeetCode badge" 
-                />
+                /> */}
             </div>
         </div>
     );
