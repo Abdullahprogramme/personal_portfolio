@@ -8,7 +8,7 @@ import Education from './Components/Education';
 import Certifications from './Components/Certifications';
 import LanguagesAndInterests from './Components/LanguagesAndInterests';
 import Experience from './Components/Experience';
-// import Progress from './Components/Progress';
+import Progress from './Components/Progress';
 import Footer from './Components/Footer';
 import Lottie from './Components/Lottie/lottie';
 
@@ -21,7 +21,7 @@ function App() {
       <Lottie />
       <About />
       <LanguagesAndInterests />
-      {/* <Progress /> */}
+      <Progress />
       <Education />
       <Experience />
       <Certifications />
