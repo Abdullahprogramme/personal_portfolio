@@ -6,9 +6,9 @@ import About from './Components/About';
 // import Contact from './Components/Contact/Contact';
 // import Education from './Components/Education';
 // import Certifications from './Components/Certifications';
-// import LanguagesAndInterests from './Components/LanguagesAndInterests';
+import LanguagesAndInterests from './Components/LanguagesAndInterests';
 // import Experience from './Components/Experience';
-// import Progress from './Components/Progress';
+import Progress from './Components/Progress';
 // import Footer from './Components/Footer';
 import Lottie from './Components/Lottie/lottie';
 
@@ -20,9 +20,9 @@ function App() {
       <Home />
       <Lottie />
       <About />
-      {/* <LanguagesAndInterests />
+      <LanguagesAndInterests />
       <Progress />
-      <Education />
+      {/* <Education />
       <Experience />
       <Certifications />
       <Skills />
