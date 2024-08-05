@@ -1,6 +1,6 @@
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
-// import About from './Components/About';
+import About from './Components/About';
 // import Skills from './Components/Skills';
 // import Work from './Components/Work';
 // import Contact from './Components/Contact/Contact';
@@ -10,7 +10,7 @@ import Home from './Components/Home';
 // import Experience from './Components/Experience';
 // import Progress from './Components/Progress';
 // import Footer from './Components/Footer';
-// import Lottie from './Components/Lottie/lottie';
+import Lottie from './Components/Lottie/lottie';
 
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
     <div>
       <NavBar />
       <Home />
-      {/* <Lottie />
+      <Lottie />
       <About />
-      <LanguagesAndInterests />
+      {/* <LanguagesAndInterests />
       <Progress />
       <Education />
       <Experience />
