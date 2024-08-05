@@ -1,5 +1,5 @@
 import React from 'react';
-import GitHubCalendar from 'react-github-calendar';
+// import GitHubCalendar from 'react-github-calendar';
 import DisplayLottie from './Lottie/DisplayLottie';
 import GitHub from './Lottie/Github.json';
 
@@ -11,7 +11,7 @@ const GitHubLeetCodeStats = () => {
             <div className='justify-center items-center flex flex-col py-16 px-2 space-y-5'>
                 <h2 className="text-4xl font-semibold text-[#416D19] text-center">GitHub Contributions</h2>
                 <DisplayLottie animationData={GitHub} />
-                <GitHubCalendar 
+                {/* <GitHubCalendar 
                     username="Abdullahprogramme" 
                     blockSize={15} 
                     blockMargin={5} 
@@ -20,7 +20,7 @@ const GitHubLeetCodeStats = () => {
                         light: ['#d5f4e6', '#81A263', '#059212', '#9BEC00', '#06D001'],
                         dark: ['#ececec', '#d6e685', '#8cc665', '#44a340', '#1e6823']
                     }}
-                />
+                /> */}
                 {/* <img 
                     src={`https://img.shields.io/badge/LeetCode-${leetCodeUsername}-green`} 
                     alt="LeetCode badge" 
