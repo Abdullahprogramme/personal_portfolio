@@ -21,7 +21,7 @@ function App() {
       <Lottie />
       <About />
       <LanguagesAndInterests />
-      // <Progress />
+      {/* <Progress /> */}
       <Education />
       <Experience />
       <Certifications />
