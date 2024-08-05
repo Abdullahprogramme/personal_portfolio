@@ -1,4 +1,4 @@
-// import NavBar from './Components/NavBar';
+import NavBar from './Components/NavBar';
 // import Home from './Components/Home';
 // import About from './Components/About';
 // import Skills from './Components/Skills';
@@ -13,34 +13,25 @@
 // import Lottie from './Components/Lottie/lottie';
 
 
-// function App() {
-//   return (
-//     <div>
-//       <NavBar />
-//       <Home />
-//       <Lottie />
-//       <About />
-//       <LanguagesAndInterests />
-//       <Progress />
-//       <Education />
-//       <Experience />
-//       <Certifications />
-//       <Skills />
-//       <Work />
-//       <Contact />
-//       <Footer />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-export default function App() {
+function App() {
   return (
     <div>
-      <h1 className="text-red-600"> Hello World </h1>
-    </div>  
+      <NavBar />
+      {/* <Home />
+      <Lottie />
+      <About />
+      <LanguagesAndInterests />
+      <Progress />
+      <Education />
+      <Experience />
+      <Certifications />
+      <Skills />
+      <Work />
+      <Contact />
+      <Footer /> */}
+    </div>
   );
 }
 
+export default App;
 
