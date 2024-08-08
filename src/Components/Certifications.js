@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPython, FaBrain, FaPuzzlePiece } from 'react-icons/fa';
+import { MdModelTraining } from "react-icons/md";
 
 const Certifications = () => {
     return (
@@ -27,6 +28,12 @@ const Certifications = () => {
                         <FaPuzzlePiece className="text-[#416D19] text-6xl" />
                         <h2 className="text-xl text-white mt-2">Problem Solving</h2>
                         <p className="text-white mt-2">Hackerrank, Oct 2023</p>
+                    </div>
+
+                    <div className="bg-[#112240] rounded-lg shadow-lg shadow-[#040c16] p-4 flex flex-col items-center hover:translate-y-2 duration-500 mt-4">
+                        <MdModelTraining className="text-[#416D19] text-6xl" />
+                        <h2 className="text-xl text-white mt-2">Microsoft Learn, Technical Training</h2>
+                        <p className="text-white mt-2">Microsoft, August 2024</p>
                     </div>
                 </div>
             </div>
