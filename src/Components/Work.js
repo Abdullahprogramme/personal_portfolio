@@ -13,6 +13,7 @@ import StopWatch from "../Assets/StopWatch.jpg";
 import Calculator from "../Assets/Calculator.jpg";
 import QRcode from "../Assets/QRcode.jpg";
 import ToDoList from "../Assets/ToDoList.jpg";
+import Recipe from "../Assets/Recipe.jpg";
 
 const Work = () => {
 
@@ -203,6 +204,16 @@ const Work = () => {
                         codeLink={"https://github.com/Abdullahprogramme/ToDoList"}
                         detailed={"This is a to-do list application made using React Native. The user can create a to-do list using this application. The user can add, view, and delete tasks. With a very simple and user-friendly interface, the user can easily manage their tasks."}
                     />
+
+                    {/* Recipe App */}
+                    <ProjectCard
+                        image={Recipe}
+                        title={"Recipe App"}
+                        // description={"Save your favourite recipes using this recipe app"}
+                        codeLink={"https://github.com/Abdullahprogramme/RecipeApp"} 
+                        detailed={"This is a recipe application made using React Native. The user can save their favourite recipes using this recipe app. The user can add, view, and delete recipes. The user can see the ingredients and instructions of the recipe."}
+                    />
+
                 </div>
                 : null }
 
