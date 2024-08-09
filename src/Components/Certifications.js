@@ -11,29 +11,64 @@ const Certifications = () => {
                     <p className="py-4">/ My professional certifications. /</p>
                 </div>
 
-                <div className="space-y-6 py-6">
-                    <div className="bg-[#112240] rounded-lg shadow-lg shadow-[#040c16] p-4 flex flex-col items-center hover:translate-y-2 duration-500">
-                        <FaPython className="text-[#416D19] text-6xl" />
-                        <h2 className="text-xl text-white mt-2">Python For Everybody</h2>
-                        <p className="text-white mt-2">Coursera, Sep 2022</p>
-                    </div>
+                {/* Card layout */}
+                <div className="mt-10">
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="flex">
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <FaPython className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Python For Everybody</h3>
+                                    <p className="mt-5 text-base text-gray-400">Coursera, Sep 2022</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div className="bg-[#112240] rounded-lg shadow-lg shadow-[#040c16] p-4 flex flex-col items-center hover:translate-y-2 duration-500 mt-4">
-                        <FaBrain className="text-[#416D19] text-6xl" />
-                        <h2 className="text-xl text-white mt-2">Elements Of AI</h2>
-                        <p className="text-white mt-2">University Of Helsinki, Nov 2023</p>
-                    </div>
+                        <div className="flex">
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <FaBrain className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Elements Of AI</h3>
+                                    <p className="mt-5 text-base text-gray-400">University Of Helsinki, Nov 2023</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div className="bg-[#112240] rounded-lg shadow-lg shadow-[#040c16] p-4 flex flex-col items-center hover:translate-y-2 duration-500 mt-4">
-                        <FaPuzzlePiece className="text-[#416D19] text-6xl" />
-                        <h2 className="text-xl text-white mt-2">Problem Solving</h2>
-                        <p className="text-white mt-2">Hackerrank, Oct 2023</p>
-                    </div>
+                        <div className="flex">
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <FaPuzzlePiece className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Problem Solving</h3>
+                                    <p className="mt-5 text-base text-gray-400">Hackerrank, Oct 2023</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div className="bg-[#112240] rounded-lg shadow-lg shadow-[#040c16] p-4 flex flex-col items-center hover:translate-y-2 duration-500 mt-4">
-                        <MdModelTraining className="text-[#416D19] text-6xl" />
-                        <h2 className="text-xl text-white mt-2">Microsoft Learn, Technical Training</h2>
-                        <p className="text-white mt-2">Microsoft, August 2024</p>
+                        <div className="flex">
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <MdModelTraining className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Microsoft Learn, Technical Training</h3>
+                                    <p className="mt-5 text-base text-gray-400">Microsoft, August 2024</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
