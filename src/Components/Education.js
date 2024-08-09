@@ -10,24 +10,64 @@ const Education = () => {
                     <p className="py-4">/ My educational background. /</p>
                 </div>
 
-                {/* Stacked list layout */}
-                <div className="space-y-6 py-6">
-                    <div className="bg-[#112240] rounded-lg shadow-lg shadow-[#040c16] p-4 flex flex-col items-center hover:translate-y-2 duration-500">
-                        <FaGraduationCap className="text-[#416D19] text-6xl" />
-                        <h2 className="text-xl text-white mt-2">Bachelor's Degree in Computer Science</h2>
-                        <p className="text-white mt-2">Habib University, 2023 - 2027</p>
-                    </div>
+                {/* Card layout */}
+                <div className="mt-10">
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="flex">
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <FaGraduationCap className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Bachelor's Degree in Computer Science</h3>
+                                    <p className="mt-5 text-base text-gray-400">Institute of Business Administration, 2024 - continuing</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div className="bg-[#112240] rounded-lg shadow-lg shadow-[#040c16] p-4 flex flex-col items-center hover:translate-y-2 duration-500">
-                        <FaUniversity className="text-[#416D19] text-6xl" />
-                        <h2 className="text-xl text-white mt-2">A-Levels</h2>
-                        <p className="text-white mt-2">The City School - Gulshan A-Levels, 2021 - 2023</p>
-                    </div>
+                        <div className="flex">
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <FaGraduationCap className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Bachelor's Degree in Computer Science</h3>
+                                    <p className="mt-5 text-base text-gray-400">Habib University, 2023 - 2024</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div className="bg-[#112240] rounded-lg shadow-lg shadow-[#040c16] p-4 flex flex-col items-center hover:translate-y-2 duration-500">
-                        <FaSchool className="text-[#416D19] text-6xl" />
-                        <h2 className="text-xl text-white mt-2">O-Levels</h2>
-                        <p className="text-white mt-2">The City School - Boys Campus A, 2016 - 2021</p>
+                        <div className="flex">
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <FaUniversity className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">A-Levels</h3>
+                                    <p className="mt-5 text-base text-gray-400">The City School - Gulshan A-Levels, 2021 - 2023</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex">
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <FaSchool className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">O-Levels</h3>
+                                    <p className="mt-5 text-base text-gray-400">The City School - Boys Campus A, 2016 - 2021</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
