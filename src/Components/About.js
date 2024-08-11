@@ -48,8 +48,8 @@ const About = () => {
                         className="text-gray-400 text-justify sm:pl-4 pt-4 md:pt-0 lg:pl-4 md:pl-4 pr-4 sm:border-l-4 sm:border-pink-300 border-t-4 border-pink-300 sm:border-t-0 mx-4">
                         <p className="hover:bg-[#112240] bg-transparent transition duration-300 rounded-lg p-2">
                             As a front-end developer, I specialize in crafting visually appealing and functional websites.
-                            Proficient in HTML, CSS, JavaScript, React, Materials UI, and Tailwind CSS, I am currently a sophomore at Habib University in Karachi, Pakistan. 
-                            My journey as a self-taught developer involves working on various minor projects, and I am enthusiastic about exploring new opportunities for continuous learning and professional growth. 
+                            Proficient in HTML, CSS, JavaScript, React, Materials UI, and Tailwind CSS, I am currently a freshmen at IBA in Karachi, Pakistan. 
+                            My journey as a self-taught developer involves working on various minor projects, android development and I am enthusiastic about exploring new opportunities for continuous learning and professional growth. 
                         </p>
                     </motion.div>
             
