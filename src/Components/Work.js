@@ -14,6 +14,7 @@ import Calculator from "../Assets/Calculator.jpg";
 import QRcode from "../Assets/QRcode.jpg";
 import ToDoList from "../Assets/ToDoList.jpg";
 import Recipe from "../Assets/Recipe.jpg";
+import Bot from "../Assets/Bot.jpg";
 
 const Work = () => {
 
@@ -102,7 +103,16 @@ const Work = () => {
                         detailed={"This is a movie recommendation application made using React JS, Materials UI and Tailwind CSS. The user can get movie recommendations based on their chosen genre, period and so on. The user can see the movie details and the overview of the movie. Provides signup and login functionality."}
                     />
 
-                </div>
+                    {/* Chatbot */}
+                    <ProjectCard
+                        image={Bot}
+                        title={"Fitbot"}
+                        // description={"Chat with the AI chatbot to get fitness advice"}
+                        codeLink={"https://github.com/Abdullahprogramme/Fitbot"}
+                        appLink={"https://fit-bot.netlify.app/"} 
+                        detailed={"This is a chatbot application made using React JS, Materials UI, Gemini and Firebase. The user can chat with the AI chatbot to get fitness advice. The user can ask questions related to fitness and get advice from the chatbot."}
+                    />
+                    </div>
                 : null }
 
                 {/* Python Heading */}
