@@ -13,6 +13,7 @@ import typescript from "../Assets/typescript.png";
 import vscode from "../Assets/vscode.png";
 import Expo from "../Assets/Expo.png";
 import netlify from "../Assets/netlify.png";
+import Firebase from "../Assets/Firebase.png";
 
 const Skills = () => {
     const skills = [
@@ -30,6 +31,7 @@ const Skills = () => {
         {src: vscode, alt: "vscode", name: "VS Code"},
         {src: Expo, alt: "expo", name: "Expo"},
         {src: netlify, alt: "netlify", name: "Netlify"},
+        {src: Firebase, alt: "firebase", name: "Firebase"},
     ];
 
     return (
