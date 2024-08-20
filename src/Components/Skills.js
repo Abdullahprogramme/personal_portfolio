@@ -14,6 +14,8 @@ import vscode from "../Assets/vscode.png";
 import Expo from "../Assets/Expo.png";
 import netlify from "../Assets/netlify.png";
 import Firebase from "../Assets/Firebase.png";
+import MongoDB from "../Assets/MongoDB.png";
+import Node from "../Assets/Node.png";
 
 const Skills = () => {
     const skills = [
@@ -32,6 +34,8 @@ const Skills = () => {
         {src: Expo, alt: "expo", name: "Expo"},
         {src: netlify, alt: "netlify", name: "Netlify"},
         {src: Firebase, alt: "firebase", name: "Firebase"},
+        {src: MongoDB, alt: "mongodb", name: "MongoDB"},
+        {src: Node, alt: "node", name: "Node.js"},
     ];
 
     return (
