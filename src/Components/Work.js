@@ -70,7 +70,8 @@ const Work = () => {
                         // description={"Check your body mass index and seek advice"} 
                         appLink={"https://check-body-mass-index.netlify.app/"} 
                         codeLink={"https://github.com/Abdullahprogramme/BMI-calculator"}
-                        detailed={"This is a BMI calculator application made using React JS. It calculates the BMI of the user and gives advice based on the BMI. The user can get advice on how to maintain their BMI and stay healthy."}
+                        detailed={"A simple tool to calculate body mass index and offer personalized advice on maintaining a healthy BMI."}
+                        techStack={["React JS", "Tailwind CSS", "HTML", "CSS"]}
                     />
 
                     {/* Password generator */}
@@ -80,7 +81,8 @@ const Work = () => {
                         // description={"Generate strong passwords using this password generator"} 
                         appLink={"https://passforge.netlify.app"} 
                         codeLink={"https://github.com/Abdullahprogramme/Password_Generator"}
-                        detailed={"This is a password generator application made using React JS. It generates strong passwords for the user. The user can select the length of the password and choose to include numbers, symbols, and uppercase letters. The user can also copy the password to the clipboard and change the theme of the application."}
+                        detailed={"An application that generates secure passwords based on user preferences like length and characters."}
+                        techStack={["React JS", "Tailwind CSS", "Material-UI", "HTML", "CSS"]}
                     />
                     
                     {/* Weather App */}
@@ -90,7 +92,8 @@ const Work = () => {
                         // description={"Check the weather of any city using this weather app"} 
                         appLink={"https://skyswift.netlify.app"} 
                         codeLink={"https://github.com/Abdullahprogramme/Weather-App"}
-                        detailed={"This is a weather application made using React JS. It shows the weather of any city in the world. The user can search for the city and get the weather details of the city. The user can see the temperature, humidity, and weather condition of the city. Also, the user can see the weather forecast for the next 5 days."}
+                        detailed={"Check the weather of any city, including temperature, humidity, and forecasts for the next five days."}
+                        techStack={["React JS", "Tailwind CSS", "Framer Motion", "HTML", "CSS"]}
                     />
 
                     {/* Movie Recommender */}
@@ -100,7 +103,8 @@ const Work = () => {
                         // description={"Get movie recommendations based on your favourite genre"}
                         appLink={"https://cine-choice.netlify.app/"} 
                         codeLink={"https://github.com/Abdullahprogramme/Movie-Recommender"}
-                        detailed={"This is a movie recommendation application made using React JS, Materials UI and Tailwind CSS. The user can get movie recommendations based on their chosen genre, period and so on. The user can see the movie details and the overview of the movie. Provides signup and login functionality."}
+                        detailed={"Offers personalized movie recommendations and details based on user preferences."}
+                        techStack={["React JS", "Material-UI", "Tailwind CSS", "Firebase", "HTML", "CSS"]}
                     />
 
                     {/* Chatbot */}
@@ -110,7 +114,8 @@ const Work = () => {
                         // description={"Chat with the AI chatbot to get fitness advice"}
                         codeLink={"https://github.com/Abdullahprogramme/Fitbot"}
                         appLink={"https://fit-bot.netlify.app/"} 
-                        detailed={"This is a chatbot application made using React JS, Materials UI, Gemini and Firebase. The user can chat with the AI chatbot to get fitness advice. The user can ask questions related to fitness and get advice from the chatbot."}
+                        detailed={"A chatbot that provides fitness-related advice and answers users' questions."}
+                        techStack={["React JS", 'Material-UI', 'Gemini', 'Firebase', 'Tailwind CSS', 'HTML', 'CSS']}
                     />
                     </div>
                 : null }
@@ -129,7 +134,8 @@ const Work = () => {
                         title={"Tkinter application"} 
                         // description={"Test your knowledge by this interactive quiz"} 
                         codeLink={"https://github.com/Abdullahprogramme/APS-Project/"}
-                        detailed={"This is a quiz application made using Tkinter in Python. The user can test their knowledge by answering the questions in the quiz. The questions are randomly selected from a set of questions. The user can see their score at the end of the quiz."}
+                        detailed={"A quiz application where users answer random questions and receive a score at the end."}
+                        techStack={["Python", "Tkinter"]}
                     />
                     
                     {/* Password manager */}
@@ -138,7 +144,8 @@ const Work = () => {
                         title={"Password manager"} 
                         // description={"Store your passwords securely by this password manager"} 
                         codeLink={"https://github.com/Abdullahprogramme/additonal-programs/blob/main/password%20manager.py"}
-                        detailed={"This is a password manager application made using Python. The user can store their passwords securely in the password manager. The user can add, view, and delete passwords. The passwords are stored in a text file."}
+                        detailed={"A secure tool for storing, viewing, and managing passwords."}
+                        techStack={["Python"]}
                     />
                     
                     {/* Pygame application */}
@@ -147,7 +154,8 @@ const Work = () => {
                         title={"Pygame application"} 
                         // description={"A retro game of space invaders using Pygame"} 
                         codeLink={"https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders"}
-                        detailed={"This is a game application made using Pygame in Python. The user can play a retro game of space invaders. The user can move the spaceship and shoot the aliens. The user can see their score live on the screen."}
+                        detailed={"A retro-style space shooter game where players control a spaceship to defeat enemies."}
+                        techStack={["Python", "Pygame"]}
                     />
 
                     {/* QuadTree application */}
@@ -157,7 +165,8 @@ const Work = () => {
                         // description={"Compress images using QuadTree algorithm in Python"} 
                         appLink={"https://quadracompress.streamlit.app/"}
                         codeLink={"https://github.com/Abdullahprogramme/DSA-Project"}
-                        detailed={"This is an image compression application made using the QuadTree algorithm in Python. The user can compress images using the QuadTree algorithm. The frontend is made using PyQT5. The app's front-end is made using streamlit. The user can see the download the compressed image and view the original and compressed image."}
+                        detailed={"An app that compresses images, allowing users to view and compare the original and compressed versions."}
+                        techStack={["Python", "Streamlit", "PyQt5"]}
                     />
                 </div>
                 : null }
@@ -176,7 +185,8 @@ const Work = () => {
                         title={"Calculator"} 
                         // description={"Perform basic arithmetic operations using this calculator"}
                         codeLink={"https://github.com/Abdullahprogramme/PRODIGY_AD_01"}
-                        detailed={"This is a calculator application made using React Native. The user can perform basic arithmetic operations using this calculator. The user can add, subtract, multiply, and divide numbers. The user can also clear the input and delete the last digit."}
+                        detailed={"A basic calculator for performing arithmetic operations and managing inputs."}
+                        techStack={["React Native", "Expo"]}
                     />
                     
                     {/* QR code generator */}
@@ -185,7 +195,8 @@ const Work = () => {
                         title={"QR Code Reader"}
                         // description={"Read QR codes using this QR code reader"}
                         codeLink={"https://github.com/Abdullahprogramme/PRODIGY_AD_05"}
-                        detailed={"This is a QR code reader application made using React Native. The user can read QR codes using this QR code reader. The user can scan the QR code using the camera of the device. The user can see the content of the QR code, wether it is a URL, text, or contact information."}
+                        detailed={"A reader that scans and displays the content of QR codes, whether text, URLs, or contacts."}
+                        techStack={["React Native", "Expo"]}
                     />
                     
                     {/* Tic Tac Toe */}
@@ -194,7 +205,8 @@ const Work = () => {
                         title={"Tic Tac Toe"}
                         // description={"Play the classic game of tic tac toe"}
                         codeLink={"https://github.com/Abdullahprogramme/PRODIGY_AD_04"}
-                        detailed={"This is a tic tac toe application made using React Native. The user can play the classic game of tic tac toe using this application. The user can play against the computer or another player. The user can see the winner of the game."}
+                        detailed={"A classic game where users can play against another player or the computer."}
+                        techStack={["React Native", "Expo"]}
                     />
 
                     {/* Stop Watch */}
@@ -203,7 +215,8 @@ const Work = () => {
                         title={"Stop Watch"}
                         // description={"Use this stop watch to measure time intervals"} 
                         codeLink={"https://github.com/Abdullahprogramme/PRODIGY_AD_03"}
-                        detailed={"This is a stopwatch application made using React Native. The user can measure time intervals using this stopwatch. The user can start, stop, and reset the stopwatch."}
+                        detailed={"A stopwatch for tracking time intervals, with start, stop, and reset functionality."}
+                        techStack={["React Native", "Expo"]}
                     />
 
                     {/* To Do List */}
@@ -212,7 +225,8 @@ const Work = () => {
                         title={"To Do List"}
                         // description={"Create a to-do list using this application"}
                         codeLink={"https://github.com/Abdullahprogramme/ToDoList"}
-                        detailed={"This is a to-do list application made using React Native. The user can create a to-do list using this application. The user can add, view, and delete tasks. With a very simple and user-friendly interface, the user can easily manage their tasks."}
+                        detailed={"A simple application for users to add, view, and manage tasks in a to-do list."}
+                        techStack={["React Native", "Expo"]}
                     />
 
                     {/* Recipe App */}
@@ -221,7 +235,8 @@ const Work = () => {
                         title={"Recipe App"}
                         // description={"Save your favourite recipes using this recipe app"}
                         codeLink={"https://github.com/Abdullahprogramme/RecipeApp"} 
-                        detailed={"This is a recipe application made using React Native. The user can save their favourite recipes using this recipe app. The user can add, view, and delete recipes. The user can see the ingredients and instructions of the recipe."}
+                        detailed={"A tool for users to save, view, and manage their favorite recipes along with ingredients and instructions."}
+                        techStack={["React Native", "Expo"]}
                     />
 
                 </div>
