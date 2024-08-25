@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import {HiArrowNarrowRight} from 'react-icons/hi';
-import { FaAngleRight } from 'react-icons/fa';
+// import { FaAngleRight } from 'react-icons/fa';
+import { TbPointFilled } from "react-icons/tb";
 import {Typed} from "react-typed";
 import { motion } from "framer-motion";
 import ThreeBackground from "./bg";
@@ -84,27 +85,27 @@ const Home = () => {
                         <motion.ul>
                             <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                                 <span className="flex sm:items-start md:items-start lg:items-center">
-                                    <FaAngleRight className="mr-2 text-[#416D19]" />I'm a front-end developer passionate about creating user-friendly interfaces.
+                                    <TbPointFilled className="mr-2 text-[#416D19]" />I'm a front-end developer passionate about creating user-friendly interfaces.
                                 </span>
                             </motion.li>
                             <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                                 <span className="flex sm:items-start md:items-start lg:items-center">
-                                    <FaAngleRight className="mr-2 text-[#416D19]" />My expertise lies in crafting seamless and responsive web experiences.
+                                    <TbPointFilled className="mr-2 text-[#416D19]" />My expertise lies in crafting seamless and responsive web experiences.
                                 </span>
                             </motion.li>
                             <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                                 <span className="flex sm:items-start md:items-start lg:items-center">
-                                    <FaAngleRight className="mr-2 text-[#416D19]" />I bring ideas to life by blending creativity with technical know-how.
+                                    <TbPointFilled className="mr-2 text-[#416D19]" />I bring ideas to life by blending creativity with technical know-how.
                                 </span>
                             </motion.li>
                             <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                                 <span className="flex sm:items-start md:items-start lg:items-center">
-                                    <FaAngleRight className="mr-2 text-[#416D19]" />Proficient in React and Python, I have prior experience in both technologies.
+                                    <TbPointFilled className="mr-2 text-[#416D19]" />Proficient in React and Python, I have prior experience in both technologies.
                                 </span>
                             </motion.li>
                             <motion.li className="text-white py-1 max-w-[700px]" variants={itemVariants}>
                                 <span className="flex sm:items-start md:items-start lg:items-center">
-                                    <FaAngleRight className="mr-2 text-[#416D19]" />Let's collaborate to build something amazing!
+                                    <TbPointFilled className="mr-2 text-[#416D19]" />Let's collaborate to build something amazing!
                                 </span>
                             </motion.li>
 
