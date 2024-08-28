@@ -22,7 +22,7 @@ const NavBar = () => {
     const links = ['Home', 'About', 'Education', 'Experience', 'Skills', 'Work', 'Contact']; // replace with your actual links
 
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#A0937D] text-gray-300" style={{ zIndex: 1000 }}>
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#5F685A] text-gray-300" style={{ zIndex: 1000 }}>
             <div className="insta">
                 <a href="https://www.instagram.com/abdullahtariq62/?next=%2F&hl=en" target="_blank" rel="noopener noreferrer">
                     {/* <img src={man} alt="abdullah" style={{width: '50px'}}/> */}
