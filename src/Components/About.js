@@ -64,7 +64,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaCode, FaDatabase, FaMobileAlt } from 'react-icons/fa';
+import { FaLaptopCode, FaDatabase, FaMobileAlt } from 'react-icons/fa';
 
 const About = () => {
     const { ref, inView } = useInView({
@@ -124,7 +124,7 @@ const About = () => {
                         variants={itemVariants}
                         className="bg-[#112240] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
                     >
-                        <FaCode className="text-4xl mb-4" />
+                        <FaLaptopCode className="text-4xl mb-4" />
                         <h3 className="text-2xl">Front-end</h3>
                         <h3 className="text-1xl mb-4">Developer</h3>
                     </motion.div>
