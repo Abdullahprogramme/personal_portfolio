@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPython, FaBrain, FaPuzzlePiece } from 'react-icons/fa';
 import { MdModelTraining } from "react-icons/md";
+import { GoStack } from "react-icons/go";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -98,6 +99,26 @@ const Certifications = () => {
                                 </div>
                             </div>
                         </motion.div>
+                        
+                        <motion.div
+                            className="flex"
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                        >
+                            <div className="flex-grow flow-root bg-gray-800 rounded-lg px-6 pb-8 shadow-lg">
+                                <div className="-mt-6">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                            <GoStack className="text-white text-3xl" />
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Node.js & MongoDB: Developing Back-end Database Applications</h3>
+                                    <p className="mt-5 text-base text-gray-400">Coursera, Sep 2024</p>
+                                </div>
+                            </div>
+                        </motion.div>
+
                     </div>
                 </div>
             </div>
