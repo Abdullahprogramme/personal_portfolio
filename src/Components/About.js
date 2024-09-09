@@ -64,7 +64,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaLaptopCode, FaDatabase, FaMobileAlt } from 'react-icons/fa';
+// import { FaLaptopCode, FaDatabase, FaMobileAlt } from 'react-icons/fa';
+import backend from '../Assets/backend.png';
+import frontend from '../Assets/frontend.png';
+import android from '../Assets/android.png';
 
 const About = () => {
     const { ref, inView } = useInView({
@@ -124,7 +127,8 @@ const About = () => {
                         variants={itemVariants}
                         className="bg-[#112240] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
                     >
-                        <FaLaptopCode className="text-4xl mb-4" />
+                        {/* <FaLaptopCode className="text-4xl mb-4" /> */}
+                        <img src={frontend} alt="Frontend" className="w-20 h-20 mb-4" />
                         <h3 className="text-2xl">Front-end</h3>
                         <h3 className="text-1xl mb-4">Developer</h3>
                     </motion.div>
@@ -133,7 +137,8 @@ const About = () => {
                         variants={itemVariants}
                         className="bg-[#112240] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
                     >
-                        <FaDatabase className="text-4xl mb-4" />
+                        {/* <FaDatabase className="text-4xl mb-4" /> */}
+                        <img src={backend} alt="Backend" className="w-20 h-20 mb-4" />
                         <h3 className="text-2xl">Back-end</h3>
                         <h3 className="text-1xl mb-4">Developer</h3>
                     </motion.div>
@@ -142,7 +147,8 @@ const About = () => {
                         variants={itemVariants}
                         className="bg-[#112240] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
                     >
-                        <FaMobileAlt className="text-4xl mb-4" />
+                        {/* <FaMobileAlt className="text-4xl mb-4" /> */}
+                        <img src={android} alt="Android" className="w-20 h-20 mb-4" />
                         <h3 className="text-2xl">Android</h3>
                         <h3 className="text-1xl mb-4">Developer</h3>
                     </motion.div>
