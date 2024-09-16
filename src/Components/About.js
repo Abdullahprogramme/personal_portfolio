@@ -98,7 +98,7 @@ const About = () => {
     };
 
     return (
-        <div ref={ref} name='about' className="w-full min-h-screen bg-[#0b1a30] text-gray-300 overflow-hidden">
+        <div ref={ref} name='about' className="w-full min-h-screen bg-[#0a192f] text-gray-300 overflow-hidden">
             <div className="flex flex-col justify-center items-center w-full h-full">
                 
                 <div className="max-w-[1000px] pt-4 w-full grid grid-cols-2 gap-8">
