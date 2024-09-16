@@ -125,7 +125,7 @@ const About = () => {
                 >
                     <motion.div
                         variants={itemVariants}
-                        className="bg-[#112240] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
+                        className="bg-[#1c3a5a] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
                     >
                         {/* <FaLaptopCode className="text-4xl mb-4" /> */}
                         <img src={frontend} alt="Frontend" className="w-20 h-20 mb-4" />
@@ -135,7 +135,7 @@ const About = () => {
 
                     <motion.div
                         variants={itemVariants}
-                        className="bg-[#112240] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
+                        className="bg-[#1c3a5a] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
                     >
                         {/* <FaDatabase className="text-4xl mb-4" /> */}
                         <img src={backend} alt="Backend" className="w-20 h-20 mb-4" />
@@ -145,7 +145,7 @@ const About = () => {
 
                     <motion.div
                         variants={itemVariants}
-                        className="bg-[#112240] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
+                        className="bg-[#1c3a5a] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
                     >
                         {/* <FaMobileAlt className="text-4xl mb-4" /> */}
                         <img src={android} alt="Android" className="w-20 h-20 mb-4" />
