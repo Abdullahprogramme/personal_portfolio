@@ -132,3 +132,8 @@
 .fadeIn {
     animation: fadeIn 1s ease-out forwards;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+.f {
+    font-family: 'Roboto', sans-serif;
+}
