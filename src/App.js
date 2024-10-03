@@ -11,7 +11,7 @@ import Experience from './Components/Experience';
 // import Progress from './Components/Progress';
 import Footer from './Components/Footer';
 import Lottie from './Components/Lottie/lottie';
-
+import Achievement from './Components/Achievement';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
       <Certifications />
       <Skills />
       <Work />
+      <Achievement />
       <Contact />
       <Footer />
     </div>
