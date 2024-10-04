@@ -45,8 +45,11 @@ const Achievement = () => {
                     <div className="flex-1 p-4 overflow-y-auto">
                         <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-200'} p-4 rounded-lg h-full border border-gray-600`}>
                             {achievements.map((achievement, index) => (
-                                <p key={index} className={`text-sm font-mono ${darkMode ? 'text-white' : 'text-black'} mb-2`}>
-                                    {`<p> ${achievement} </p>`}
+                                <p key={index} className={`text-xs sm:text-sm font-mono ${darkMode ? 'text-white' : 'text-black'} mb-2`}>
+                                    {`${index + 1} `}
+                                    <span style={{ color: 'red' }}>&lt;p&gt;</span>
+                                    {` ${achievement} `}
+                                    <span style={{ color: 'red' }}>&lt;/p&gt;</span>
                                 </p>
                             ))}
                         </div>
