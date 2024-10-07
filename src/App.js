@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -13,26 +14,53 @@ import Footer from './Components/Footer';
 import Lottie from './Components/Lottie/lottie';
 import Achievement from './Components/Achievement';
 
+const LoadingSpinner = ({ isFadingOut }) => {
+    return (
+        <div className={`flex flex-col bg-[#f0f0f0] items-center justify-center h-screen ${isFadingOut ? 'fade-out' : ''}`}>
+            <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-[#416D19] mb-4"></div>
+            <p className="text-lg text-[#416D19]">Loading...</p>
+        </div>
+    );
+};
+
 function App() {
-  return (
-    <div>
-      <NavBar />
-      <Home />
-      <Lottie />
-      <About />
-      <LanguagesAndInterests />
-      {/* <Progress /> */}
-      <Education />
-      <Experience />
-      <Certifications />
-      <Skills />
-      <Work />
-      <Achievement />
-      <Contact />
-      <Footer />
-    </div>
-  );
+    const [isLoading, setIsLoading] = useState(true);
+    const [isFadingOut, setIsFadingOut] = useState(false);
+
+    useEffect(() => {
+        // Simulate a loading period
+        const timer = setTimeout(() => {
+            setIsFadingOut(true);
+            setTimeout(() => {
+              setIsLoading(false);
+            }, 1000); // Match the duration of the fade-out animation
+        }, 3000); // 3 seconds
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (isLoading) {
+        return <LoadingSpinner isFadingOut={isFadingOut} />;
+    }
+
+    return (
+        <div className="fade-in">
+            <NavBar />
+            <Home />
+            <Lottie />
+            <About />
+            <LanguagesAndInterests />
+            {/* <Progress /> */}
+            <Education />
+            <Experience />
+            <Certifications />
+            <Skills />
+            <Work />
+            <Achievement />
+            <Contact />
+            <Footer />
+      </div>
+    );
 }
 
 export default App;
-
