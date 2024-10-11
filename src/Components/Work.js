@@ -15,6 +15,7 @@ import QRcode from "../Assets/QRcode.jpg";
 import ToDoList from "../Assets/ToDoList.jpg";
 import Recipe from "../Assets/Recipe.jpg";
 import Bot from "../Assets/Bot.jpg";
+import editor from "../Assets/editor.jpg";
 
 const Work = () => {
 
@@ -116,6 +117,17 @@ const Work = () => {
                         appLink={"https://fit-bot.netlify.app/"} 
                         detailed={"A chatbot that provides fitness-related advice and answers users' questions."}
                         techStack={["React JS", 'Material-UI', 'Gemini', 'Firebase', 'Tailwind CSS', 'HTML', 'CSS']}
+                    />
+
+                    {/* Web editor */}
+                    <ProjectCard
+                        image={editor}
+                        title={"Web Editor"}
+                        // description={"Edit and preview HTML and CSS code in real-time"}
+                        codeLink={"https://github.com/Abdullahprogramme/web_editor"}
+                        appLink={"https://live-web-editor.netlify.app/"}
+                        detailed={"An online code editor that allows users to write, edit, and preview HTML and CSS code in real-time."}
+                        techStack={["React JS", "Tailwind CSS", "HTML", "CSS"]}
                     />
                     </div>
                 : null }
