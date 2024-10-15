@@ -28,7 +28,7 @@ const NavBar = () => {
                 <FaCode className="text-gray-500 mr-2" />
                 <pre className="whitespace-pre-wrap flex items-center m-0 p-0">
                     <code className="flex items-center f">
-                        {`ABDULLAH TARIQ`}
+                        {`ABDULLAH TARIQ`} {/* change this to your name */}
                     </code>
                 </pre>
                 <FaCode className="text-gray-500 ml-2" />
@@ -98,6 +98,7 @@ const NavBar = () => {
             <div className={`fixed flex-col top-[35%] left-0 ${nav ? 'flex' : 'hidden'} custom:flex`}>
             {/* <div className="lg:flex fixed flex-col top-[35%] left-0 "> */}
                 <ul>
+                    {/* change the social media links as needed */}
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
                         <a className='flex justify-between items-center w-full text-gray-300' target='_blank'  rel="noopener noreferrer" href='https://www.linkedin.com/in/abdullahtariq78/'>
                             LinkedIn <FaLinkedin size={30}/> 
