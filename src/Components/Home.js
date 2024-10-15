@@ -72,6 +72,7 @@ const Home = () => {
                 <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]"><span ref={el} className="descriptionTyped" /></h2>
 
                 <div className="flex flex-row mt-4">
+                    {/* change the text as you wish */}
                     <motion.div
                         className="flex flex-col"
                         variants={containerVariants}
