@@ -7,6 +7,7 @@ import Experience from './Lottie/Experience.json';
 import DisplayLottie from './Lottie/DisplayLottie';
 
 const Timeline = () => {
+    // add or change the experiences here
     const experiences = [
         { year: 'May 2024', title: 'Summer career Academy', description: 'The Summer Career Academy provided essential industry skills through a comprehensive career curation program featuring experts in various fields. The training encompassed a wide range of topics, including emotional intelligence, leadership, and presentation skills. Additionally, we gained proficiency in Power BI for data manipulation and entry, with clear and effective instruction. We also had the opportunity to meet and learn from industry leaders, enhancing our understanding and preparedness for future careers.', 
             skills: ['Power BI', 'Data Manipulation', 'Leadership', 'Presentation Skills', 'Team Management', 'Teamwork', 'Strategic Thinking', 'Data Visualization', 'Problem Solving'] },
