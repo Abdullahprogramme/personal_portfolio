@@ -28,6 +28,12 @@ To clone this repository locally, use the following command:
 git clone https://github.com/Abdullahprogramme/personal_portfolio
 ```
 
+To install the dependencies, run the following command in the root folder of the cloned project:
+
+```
+npm install
+```
+
 **You can change the descriptions and name and stuff by simply following these steps:**
 1. Change every image in the Asset folder.
 2. In the respective component file do change their names and imports.
