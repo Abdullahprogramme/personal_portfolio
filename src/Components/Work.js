@@ -1,4 +1,6 @@
 import React, {useEffect} from "react";
+
+// Import project images
 import BMI from "../Assets/BMI.jpg";
 import space from "../Assets/space.png";
 import Password from "../Assets/Password.jpg";
