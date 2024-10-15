@@ -7,6 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-2">
         {/* Desktop View */}
         <div className="hidden custom:flex flex-col items-center justify-between custom:flex-row">
+          {/* change the text as needed */}
           <p className="text-center">
             Made with <FaHeart className="inline text-red-500" /> by Abdullah Tariq © {new Date().getFullYear()} | All Rights Reserved
           </p>
@@ -29,6 +30,7 @@ const Footer = () => {
         {/* Mobile View */}
         <div className="custom:hidden flex flex-col items-center">
           <div className="flex gap-4 mb-4">
+            {/* change the social media links as needed */}
             <a
               href="https://www.linkedin.com/in/abdullahtariq78/"
               target="_blank"
