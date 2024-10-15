@@ -37,6 +37,7 @@ const Certifications = () => {
                                             <FaPython className="text-white text-3xl" />
                                         </span>
                                     </div>
+                                    {/* change the certification title, institution and date */}
                                     <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Python For Everybody</h3>
                                     <p className="mt-5 text-base text-gray-400">Coursera, Sep 2022</p>
                                 </div>
@@ -56,6 +57,7 @@ const Certifications = () => {
                                             <FaBrain className="text-white text-3xl" />
                                         </span>
                                     </div>
+                                    {/* change the certification title, institution and date */}
                                     <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Elements Of AI</h3>
                                     <p className="mt-5 text-base text-gray-400">University Of Helsinki, Nov 2023</p>
                                 </div>
@@ -75,6 +77,7 @@ const Certifications = () => {
                                             <FaPuzzlePiece className="text-white text-3xl" />
                                         </span>
                                     </div>
+                                    {/* change the certification title, institution and date */}
                                     <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Problem Solving</h3>
                                     <p className="mt-5 text-base text-gray-400">Hackerrank, Oct 2023</p>
                                 </div>
@@ -94,6 +97,7 @@ const Certifications = () => {
                                             <MdModelTraining className="text-white text-3xl" />
                                         </span>
                                     </div>
+                                    {/* change the certification title, institution and date */}
                                     <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Microsoft Learn, Technical Training</h3>
                                     <p className="mt-5 text-base text-gray-400">Microsoft, August 2024</p>
                                 </div>
@@ -113,6 +117,7 @@ const Certifications = () => {
                                             <GoStack className="text-white text-3xl" />
                                         </span>
                                     </div>
+                                    {/* change the certification title, institution and date */}
                                     <h3 className="mt-8 text-lg font-medium text-white tracking-tight">Node.js & MongoDB: Developing Back-end Database Applications</h3>
                                     <p className="mt-5 text-base text-gray-400">Coursera, Sep 2024</p>
                                 </div>
