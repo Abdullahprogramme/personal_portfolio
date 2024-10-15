@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaCode, FaFileCode, FaFolder, FaTerminal, FaSun, FaMoon } from 'react-icons/fa';
 import { VscDebugAlt, VscSourceControl, VscExtensions } from "react-icons/vsc";
 
+// add your achievements here
 const achievements = [
     'Achieved the organizer position of GDG',
     'Built a personal portfolio website',
