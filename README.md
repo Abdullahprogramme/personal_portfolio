@@ -27,3 +27,11 @@ To clone this repository locally, use the following command:
 ```bash
 git clone https://github.com/Abdullahprogramme/personal_portfolio
 ```
+
+**You can change the descriptions and name and stuff by simply following these steps:**
+1. Change every image in the Asset folder.
+2. In the respective component file do change their names and imports.
+3. If you want to remove something such as a skill or any project, simply comment them or delete that <div> box.
+4. Furthermore you would like to change the profile pic and website title in the public folder's file **Index.html** file.
+5. Remove my picture and add yours their and update the name of the imports.
+6. Enjoy your own protfolio.
