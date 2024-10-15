@@ -40,12 +40,7 @@ const Contact = () => {
             const fullMessage = `${name} with email ${email}. ${message}`;
             e.target.message.value = fullMessage;
 
-            emailjs.sendForm( // update the emailjs.sendForm with your own service id, template id and user id
-                    process.env.REACT_APP_EMAILJS_SERVICE_ID, // service id
-                    process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // template id
-                    e.target, // form id
-                    process.env.REACT_APP_EMAILJS_USER_ID // user id
-                )
+            emailjs.sendForm('service_jd1hfxr', 'template_1soq30a', e.target, 'bHsV3KHZq3n9XSzmA')
                 .then((result) => {
                     setIsEmailSent('Email sent successfully');
                     setNotification({ message: 'Email sent successfully', type: 'success' });
