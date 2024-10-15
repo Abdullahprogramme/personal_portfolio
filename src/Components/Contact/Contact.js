@@ -40,6 +40,7 @@ const Contact = () => {
             const fullMessage = `${name} with email ${email}. ${message}`;
             e.target.message.value = fullMessage;
 
+            // change the serviceID, templateID and userID with your own
             emailjs.sendForm('service_jd1hfxr', 'template_1soq30a', e.target, 'bHsV3KHZq3n9XSzmA')
                 .then((result) => {
                     setIsEmailSent('Email sent successfully');
