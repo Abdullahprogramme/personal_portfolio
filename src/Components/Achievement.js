@@ -6,7 +6,7 @@ import { VscDebugAlt, VscSourceControl, VscExtensions } from "react-icons/vsc";
 const achievements = [
     'Achieved the organizer position of GDG',
     'Built a personal portfolio website',
-    'Learnt over 5 programming languages',
+    'Learnt over 6 programming languages',
 ];
 
 const Achievement = () => {
@@ -47,7 +47,7 @@ const Achievement = () => {
                         <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-200'} p-4 rounded-lg h-full border border-gray-600`}>
                             {achievements.map((achievement, index) => (
                                 <p key={index} className={`text-xs sm:text-sm font-mono ${darkMode ? 'text-white' : 'text-black'} mb-2`}>
-                                    {`${index + 1} `}
+                                    {`${index + 1}. `}
                                     <span style={{ color: 'red' }}>&lt;p&gt;</span>
                                     {` ${achievement} `}
                                     <span style={{ color: 'red' }}>&lt;/p&gt;</span>
