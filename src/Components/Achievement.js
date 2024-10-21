@@ -11,9 +11,34 @@ const achievements = [
     'Learnt full-stack web development',
 ];
 
+// add your language styles of the languages you have learnt here or remove the ones you don't need
+const languageStyles = {
+    'Visual Basic': (achievement, index) => `Dim achievement${index} As String = "${achievement}"`,
+    'HTML': (achievement, index) => `&lt;p&gt; ${achievement} &lt;/p&gt;`,
+    'CSS': (achievement, index) => `.achievement-${index}::after { content: "${achievement}"; }`,
+    'Python': (achievement, index) => `achievement_${index} = "${achievement}"`,
+    'Javascript': (achievement, index) => `const achievement${index} = "${achievement}";`,
+    'Typescript': (achievement, index) => `const achievement${index}: string = "${achievement}";`,
+    'C++': (achievement, index) => `std::string achievement${index} = "${achievement}";`,
+    'C': (achievement, index) => `char achievement${index}[] = "${achievement}";`,
+};
+
+// add your syntax highlighting of the languages you have learnt here or remove the ones you don't need
+const syntaxHighlighting = {
+    'Visual Basic': (text) => text.replace(/(Dim|As|String)/g, '<span class="text-purple-500">$1</span>'),
+    'HTML': (text) => text.replace(/(&lt;p&gt;|&lt;\/p&gt;)/g, '<span class="text-red-500">$1</span>'),
+    'CSS': (text) => text.replace(/(\.achievement-\d+::after|content)/g, '<span class="text-blue-500">$1</span>'),
+    'Python': (text) => text.replace(/(achievement_\d+|=)/g, '<span class="text-yellow-500">$1</span>'),
+    'Javascript': (text) => text.replace(/(const|=)/g, '<span class="text-green-500">$1</span>'),
+    'Typescript': (text) => text.replace(/(const|:|string|=)/g, '<span class="text-indigo-500">$1</span>'),
+    'C++': (text) => text.replace(/(std::string|=)/g, '<span class="text-pink-500">$1</span>'),
+    'C': (text) => text.replace(/(char|=|\[\])/g, '<span class="text-orange-500">$1</span>'),
+};
+
 const Achievement = () => {
     const [darkMode, setDarkMode] = useState(true);
     const [isTerminalOpen, setIsTerminalOpen] = useState(true);
+    const [selectedLanguage, setSelectedLanguage] = useState('HTML');
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
@@ -21,6 +46,10 @@ const Achievement = () => {
 
     const toggleTerminal = () => {
         setIsTerminalOpen(!isTerminalOpen);
+    };
+
+    const handleLanguageChange = (e) => {
+        setSelectedLanguage(e.target.value);
     };
 
     return (
@@ -32,9 +61,22 @@ const Achievement = () => {
                         <FaCode className="text-blue-500 mr-2" />
                         <span className="text-sm font-semibold">VS Code - Achievement.js</span>
                     </div>
-                    <button onClick={toggleDarkMode} className="focus:outline-none">
-                        {darkMode ? <FaSun className="text-yellow-500" /> : <FaMoon className="text-gray-800" />}
-                    </button>
+                    <div className="flex items-center">
+                        <select
+                            value={selectedLanguage}
+                            onChange={handleLanguageChange}
+                            className="bg-transparent border text-center border-gray-500 text-sm focus:outline-none mr-4 p-1 rounded"
+                        >
+                            {Object.keys(languageStyles).map((lang) => (
+                                <option key={lang} value={lang} className="text-black">
+                                    {lang}
+                                </option>
+                            ))}
+                        </select>
+                        <button onClick={toggleDarkMode} className="focus:outline-none">
+                            {darkMode ? <FaSun className="text-yellow-500" /> : <FaMoon className="text-gray-800" />}
+                        </button>
+                    </div>
                 </div>
 
                 {/* Main Content */}
@@ -51,14 +93,13 @@ const Achievement = () => {
 
                     {/* Achievements Content */}
                     <div className="flex-1 flex flex-col overflow-hidden">
-                        <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-200'} p-4  flex-1 overflow-y-auto border border-gray-600`}>
+                        <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-200'} p-4 flex-1 overflow-y-auto border border-gray-600`}>
                             {achievements.map((achievement, index) => (
-                                <p key={index} className={`text-xs sm:text-sm font-mono ${darkMode ? 'text-white' : 'text-black'} mb-2`}>
-                                    {`${index + 1}. `}
-                                    <span style={{ color: 'red' }}>&lt;p&gt;</span>
-                                    {` ${achievement} `}
-                                    <span style={{ color: 'red' }}>&lt;/p&gt;</span>
-                                </p>
+                                <p
+                                    key={index}
+                                    className={`text-xs sm:text-sm font-mono ${darkMode ? 'text-white' : 'text-black'} mb-2`}
+                                    dangerouslySetInnerHTML={{ __html: syntaxHighlighting[selectedLanguage](languageStyles[selectedLanguage](achievement, index + 1)) }}
+                                />
                             ))}
                         </div>
 
