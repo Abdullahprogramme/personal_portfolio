@@ -111,18 +111,18 @@ const Achievement = () => {
                                     <span className="text-sm font-semibold">Terminal</span>
                                 </div>
                                 <div className="flex items-center">
-                                    <RiTerminalBoxLine className="text-gray-400 mr-2" />
-                                    <p className="text-xs font-mono text-gray-400 mr-2">bash</p>
+                                    <RiTerminalBoxLine className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} mr-4`} />
+                                    <p className={`text-xs font-mono ${darkMode ? 'text-gray-400' : 'text-gray-600'} mr-2`}>bash</p>
                                     <button onClick={toggleTerminal} className="focus:outline-none mr-2">
-                                        {isTerminalOpen ? <VscChevronDown className="text-gray-400" /> : <VscChevronUp className="text-gray-400" />}
+                                        {isTerminalOpen ? <VscChevronDown className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} mr-4`} /> : <VscChevronUp className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} mr-4`} />}
                                     </button>
                                     <button className="focus:outline-none">
-                                        <VscClose className="text-gray-400" />
+                                        <VscClose className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} mr-4`} />
                                     </button>
                                 </div>
                             </div>
                             {isTerminalOpen && (
-                                <div className="p-2 text-xs font-mono text-white overflow-y-auto">
+                                <div className={`p-2 text-xs font-mono ${darkMode ? `text-white` : `text-black`} overflow-y-auto`}>
                                     {/* Add your terminal commands here */}
                                     <p>abdullah@portfolio:~$ echo "Welcome to the terminal!"</p>
                                     <p>Welcome to the terminal!</p>
