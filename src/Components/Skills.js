@@ -1,42 +1,26 @@
 import React from "react";
-import physics from "../Assets/physics.png";
-import github from "../Assets/github.png";
-import git from "../Assets/git.png";
-import js from "../Assets/js.png";
-import html from "../Assets/html.png";
-import css from "../Assets/css.png";
-import python from "../Assets/python.png";
-import tailwind from "../Assets/tailwind.png";
-import materialsui from "../Assets/materialsui.png";
-import ReactNative from "../Assets/ReactNative.png";
-import typescript from "../Assets/typescript.png";
-import vscode from "../Assets/vscode.png";
-import Expo from "../Assets/Expo.png";
-import netlify from "../Assets/netlify.png";
-import Firebase from "../Assets/Firebase.png";
-import MongoDB from "../Assets/MongoDB.png";
-import Node from "../Assets/Node.png";
+import { FaHtml5, FaCss3Alt, FaJs, FaGithub, FaGitAlt, FaReact, FaPython, FaNodeJs } from "react-icons/fa";
+import { SiTailwindcss, SiMui, SiReact, SiTypescript, SiVisualstudiocode, SiExpo, SiNetlify, SiFirebase, SiMongodb } from "react-icons/si";
 
 const Skills = () => {
-    // add or remove skills as needed, change the src and alt attributes and add those images in the Assets folder
     const skills = [
-        {src: html, alt: "html", name: "HTML"},
-        {src: css, alt: "css", name: "CSS"},
-        {src: js, alt: "js", name: "JavaScript"},
-        {src: github, alt: "github", name: "GitHub"},
-        {src: git, alt: "git", name: "Git"},
-        {src: physics, alt: "react", name: "React"},
-        {src: python, alt: "python", name: "Python"},
-        {src: tailwind, alt: "tailwind", name: "Tailwind CSS"},
-        {src: materialsui, alt: "materialsui", name: "Material-UI"},
-        {src: ReactNative, alt: "reactnative", name: "React Native"},
-        {src: typescript, alt: "typescript", name: "TypeScript"},
-        {src: vscode, alt: "vscode", name: "VS Code"},
-        {src: Expo, alt: "expo", name: "Expo"},
-        {src: netlify, alt: "netlify", name: "Netlify"},
-        {src: Firebase, alt: "firebase", name: "Firebase"},
-        {src: MongoDB, alt: "mongodb", name: "MongoDB"},
-        {src: Node, alt: "node", name: "Node.js"},
+        {icon: <FaHtml5 className="text-6xl text-orange-600" />, name: "HTML"},
+        {icon: <FaCss3Alt className="text-6xl text-blue-600" />, name: "CSS"},
+        {icon: <FaJs className="text-6xl text-yellow-500" />, name: "JavaScript"},
+        {icon: <FaGithub className="text-6xl text-gray-300" />, name: "GitHub"},
+        {icon: <FaGitAlt className="text-6xl text-orange-600" />, name: "Git"},
+        {icon: <FaReact className="text-6xl text-blue-400" />, name: "React"},
+        {icon: <FaPython className="text-6xl text-yellow-400" />, name: "Python"},
+        {icon: <SiTailwindcss className="text-6xl text-blue-400" />, name: "Tailwind CSS"},
+        {icon: <SiMui className="text-6xl text-blue-600" />, name: "Material-UI"},
+        {icon: <SiReact className="text-6xl text-blue-400" />, name: "React Native"},
+        {icon: <SiTypescript className="text-6xl text-blue-600" />, name: "TypeScript"},
+        {icon: <SiVisualstudiocode className="text-6xl text-blue-600" />, name: "VS Code"},
+        {icon: <SiExpo className="text-6xl text-black" />, name: "Expo"},
+        {icon: <SiNetlify className="text-6xl text-blue-600" />, name: "Netlify"},
+        {icon: <SiFirebase className="text-6xl text-yellow-500" />, name: "Firebase"},
+        {icon: <SiMongodb className="text-6xl text-green-600" />, name: "MongoDB"},
+        {icon: <FaNodeJs className="text-6xl text-green-600" />, name: "Node.js"},
     ];
 
     return (
@@ -50,8 +34,8 @@ const Skills = () => {
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
                     {skills.map((skill, index) => (
                         <div key={index} className="shadow-lg shadow-[#040c16] border border-gray-700 bg-[#1e293b] rounded-lg p-4 flex flex-col items-center">
-                            <img className="w-20 mb-2" src={skill.src} alt={skill.alt} />
-                            <p className="mt-auto">{skill.name}</p>
+                            {skill.icon}
+                            <p className="mt-4">{skill.name}</p>
                         </div>
                     ))}
                 </div>
