@@ -1,46 +1,72 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaGithub, FaGitAlt, FaReact, FaPython, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiMui, SiReact, SiTypescript, SiVisualstudiocode, SiExpo, SiNetlify, SiFirebase, SiMongodb } from "react-icons/si";
+import { SiTailwindcss, SiMui, SiReact, SiTypescript, SiVisualstudiocode, SiExpo, SiNetlify, SiFlask, SiFirebase, SiMongodb } from "react-icons/si";
+import { motion } from "framer-motion";
+import * as Tooltip from "@radix-ui/react-tooltip";
 
 const Skills = () => {
     const skills = [
-        {icon: <FaHtml5 className="text-6xl text-orange-600" />, name: "HTML"},
-        {icon: <FaCss3Alt className="text-6xl text-blue-600" />, name: "CSS"},
-        {icon: <FaJs className="text-6xl text-yellow-500" />, name: "JavaScript"},
-        {icon: <FaGithub className="text-6xl text-gray-300" />, name: "GitHub"},
-        {icon: <FaGitAlt className="text-6xl text-orange-600" />, name: "Git"},
-        {icon: <FaReact className="text-6xl text-blue-400" />, name: "React"},
-        {icon: <FaPython className="text-6xl text-yellow-400" />, name: "Python"},
-        {icon: <SiTailwindcss className="text-6xl text-blue-400" />, name: "Tailwind CSS"},
-        {icon: <SiMui className="text-6xl text-blue-600" />, name: "Material-UI"},
-        {icon: <SiReact className="text-6xl text-blue-400" />, name: "React Native"},
-        {icon: <SiTypescript className="text-6xl text-blue-600" />, name: "TypeScript"},
-        {icon: <SiVisualstudiocode className="text-6xl text-blue-600" />, name: "VS Code"},
-        {icon: <SiExpo className="text-6xl text-black" />, name: "Expo"},
-        {icon: <SiNetlify className="text-6xl text-blue-600" />, name: "Netlify"},
-        {icon: <SiFirebase className="text-6xl text-yellow-500" />, name: "Firebase"},
-        {icon: <SiMongodb className="text-6xl text-green-600" />, name: "MongoDB"},
-        {icon: <FaNodeJs className="text-6xl text-green-600" />, name: "Node.js"},
+        { icon: <FaHtml5 />, name: "HTML", color: "text-orange-600" },
+        { icon: <FaCss3Alt />, name: "CSS", color: "text-blue-600" },
+        { icon: <FaJs />, name: "JavaScript", color: "text-yellow-500" },
+        { icon: <FaGithub />, name: "GitHub", color: "text-gray-300" },
+        { icon: <FaGitAlt />, name: "Git", color: "text-orange-600" },
+        { icon: <FaReact />, name: "React", color: "text-blue-400" },
+        { icon: <FaPython />, name: "Python", color: "text-yellow-400" },
+        { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "text-blue-400" },
+        { icon: <SiMui />, name: "Material-UI", color: "text-blue-600" },
+        { icon: <SiReact />, name: "React Native", color: "text-blue-400" },
+        { icon: <SiTypescript />, name: "TypeScript", color: "text-blue-600" },
+        { icon: <SiVisualstudiocode />, name: "VS Code", color: "text-blue-600" },
+        { icon: <SiExpo />, name: "Expo", color: "text-black" },
+        { icon: <SiNetlify />, name: "Netlify", color: "text-blue-600" },
+        { icon: <SiFirebase />, name: "Firebase", color: "text-yellow-500" },
+        { icon: <SiMongodb />, name: "MongoDB", color: "text-green-600" },
+        { icon: <FaNodeJs />, name: "Node.js", color: "text-green-600" },
+        {icon : <SiFlask/>, name: "Flask-Python", color: "text-blue-600"}
     ];
 
-    return (
-        <div name='skills' className="w-full min-h-screen bg-[#0a192f] text-gray-300">
-            <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-                <div>
-                    <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Experience</p>
-                    <p className="py-4">/ Some technologies I am familiar with. /</p>
-                </div>
+    const cardVariants = {
+        hover: { scale: 1.1, rotate: 15 },
+        rest: { scale: 1, rotate: 0 },
+    };
 
-                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-                    {skills.map((skill, index) => (
-                        <div key={index} className="shadow-lg shadow-[#040c16] border border-gray-700 bg-[#1e293b] rounded-lg p-4 flex flex-col items-center">
-                            {skill.icon}
-                            <p className="mt-4">{skill.name}</p>
-                        </div>
-                    ))}
+    return (
+        <Tooltip.Provider delayDuration={100}>
+            <div name='skills' className="w-full min-h-screen bg-[#0a192f]  text-gray-300">
+                <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+                    <div>
+                        <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Experience</p>
+                        <p className="py-4">/ Some technologies I am familiar with. /</p>
+                    </div>
+
+                    <div className="w-full grid grid-cols-3 sm:grid-cols-6 gap-6 text-center py-8">
+                        {skills.map((skill, index) => (
+                            <Tooltip.Root key={index}>
+                                <Tooltip.Trigger asChild>
+                                    <motion.div
+                                        className={`shadow-lg p-6 w-20 h-20 rounded-full bg-gray-800 flex flex-col items-center justify-center ${skill.color}`}
+                                        variants={cardVariants}
+                                        initial="rest"
+                                        whileHover="hover"
+                                    >
+                                        <div className="text-4xl">
+                                            {skill.icon}
+                                        </div>
+                                    </motion.div>
+                                </Tooltip.Trigger>
+                                <Tooltip.Portal>
+                                    <Tooltip.Content sideOffset={5} className="bg-gray-800 text-gray-200 p-2 rounded-md shadow-lg">
+                                        <span className="font-semibold">{skill.name}</span>
+                                        <Tooltip.Arrow className="fill-gray-800" />
+                                    </Tooltip.Content>
+                                </Tooltip.Portal>
+                            </Tooltip.Root>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Tooltip.Provider>
     );
 };
 
