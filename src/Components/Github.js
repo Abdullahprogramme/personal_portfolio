@@ -35,7 +35,7 @@ export default function Example() {
     <div className="bg-[#0a192f] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-2xl/7 font-semibold text-[#416D19]">About My Github</h2>
+          <h2 className="text-2xl/7 font-semibold text-[#416D19] mb-4 border-b-2 border-pink-300 inline-block">About My Github</h2>
           <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">
             A collection of code snippets
           </p>
