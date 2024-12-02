@@ -13,6 +13,7 @@ import Experience from './Components/Experience';
 import Footer from './Components/Footer';
 import Lottie from './Components/Lottie/lottie';
 import Achievement from './Components/Achievement';
+import Github from './Components/Github';
 
 const LoadingSpinner = ({ isFadingOut }) => {
     return (
@@ -34,7 +35,7 @@ function App() {
             setTimeout(() => {
               setIsLoading(false);
             }, 1000); // Match the duration of the fade-out animation
-        }, 3000); // 3 seconds
+        }, 2000); // 2 seconds
 
         return () => clearTimeout(timer);
     }, []);
@@ -57,6 +58,7 @@ function App() {
             <Skills />
             <Work />
             <Achievement />
+            <Github />
             <Contact />
             <Footer />
       </div>
