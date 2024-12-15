@@ -54,9 +54,9 @@ const Achievement = () => {
 
     return (
         <div className="bg-[#0a192f] text-white min-h-screen flex items-center justify-center p-4">
-            <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'} w-full max-w-2xl lg:max-w-4xl h-96 flex flex-col rounded-lg shadow-lg overflow-hidden`}>
+            <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'} w-full max-w-2xl lg:max-w-4xl h-96 flex flex-col rounded-md shadow-md overflow-hidden`}>
                 {/* Top Bar */}
-                <div className={`${darkMode ? 'bg-gray-800' : 'bg-gray-300'} p-2 flex items-center justify-between rounded-t-lg border-b border-gray-700`}>
+                <div className={`${darkMode ? 'bg-gray-800' : 'bg-gray-300'} p-2 flex items-center justify-between rounded-t-md border-b border-gray-700`}>
                     <div className="flex items-center">
                         <FaCode className="text-blue-500 mr-2" />
                         <span className="text-sm font-semibold">VS Code - Achievement.js</span>
@@ -65,7 +65,7 @@ const Achievement = () => {
                         <select
                             value={selectedLanguage}
                             onChange={handleLanguageChange}
-                            className="bg-transparent border text-center border-gray-500 text-sm focus:outline-none mr-4 p-1 rounded"
+                            className="bg-[#9290C3] text-black border text-center border-[#9290C3] text-sm focus:outline-none mr-4 p-1 rounded"
                         >
                             {Object.keys(languageStyles).map((lang) => (
                                 <option key={lang} value={lang} className="text-black">
@@ -95,11 +95,13 @@ const Achievement = () => {
                     <div className="flex-1 flex flex-col overflow-hidden">
                         <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-200'} p-4 flex-1 overflow-y-auto border border-gray-600`}>
                             {achievements.map((achievement, index) => (
-                                <p
-                                    key={index}
-                                    className={`text-xs sm:text-sm font-mono ${darkMode ? 'text-white' : 'text-black'} mb-2`}
-                                    dangerouslySetInnerHTML={{ __html: syntaxHighlighting[selectedLanguage](languageStyles[selectedLanguage](achievement, index + 1)) }}
-                                />
+                                <div key={index} className='flex flex-row items-start gap-3'>
+                                    <p className={`text-xs sm:text-sm ${darkMode ? 'text-white' : 'text-black'} mb-2`}>{index + 1}</p>
+                                    <p
+                                        className={`text-xs sm:text-sm font-mono ${darkMode ? 'text-white' : 'text-black'} mb-2`}
+                                        dangerouslySetInnerHTML={{ __html: syntaxHighlighting[selectedLanguage](languageStyles[selectedLanguage](achievement, index + 1)) }}
+                                    />
+                                </div>
                             ))}
                         </div>
 
