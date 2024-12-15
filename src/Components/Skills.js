@@ -26,10 +26,10 @@ const Skills = () => {
         {icon : <SiFlask/>, name: "Flask-Python", color: "text-blue-600"}
     ];
 
-    const cardVariants = {
-        hover: { scale: 1.1, rotate: 15 },
+    const cardVariants = (index) => ({  // Variants for the card animation
+        hover: { scale: 1.1, rotate: (index % 2 === 0) ? -15 : 15 },
         rest: { scale: 1, rotate: 0 },
-    };
+    });
 
     return (
         <Tooltip.Provider delayDuration={100}>
@@ -46,7 +46,7 @@ const Skills = () => {
                                 <Tooltip.Trigger asChild>
                                     <motion.div
                                         className={`shadow-lg p-6 w-20 h-20 rounded-full bg-gray-800 flex flex-col items-center justify-center ${skill.color}`}
-                                        variants={cardVariants}
+                                        variants={cardVariants(index)}
                                         initial="rest"
                                         whileHover="hover"
                                     >
