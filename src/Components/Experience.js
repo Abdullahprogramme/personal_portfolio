@@ -13,7 +13,7 @@ const Timeline = () => {
             skills: ['Power BI', 'Data Manipulation', 'Leadership', 'Presentation Skills', 'Team Management', 'Teamwork', 'Strategic Thinking', 'Data Visualization', 'Problem Solving'] },
         { year: 'June 2024', title: 'Gamer programmer intern', description: 'I worked as a game programmer intern for the game development team at M-Labs at Mindstorm studios and learnt game design and game art too.', skills: ['Unity', 'C#', 'Game Development'] },
         { year: 'June 2024', title: 'Android developer intern', description: 'I worked as a React Native intern for the Android development team at Prodigy InfoTech.', skills: ['React Native', 'Android', 'Typescript', 'React'] },
-        { year: 'July 2024', title: 'Participant QWorld Quantum Computing Workshop', description: 'I participated in the QWorld Quantum Computing Workshop, where I learned about quantum computing and quantum programming. I also learned about quantum algorithms and quantum programming languages in a very basic way.', skills: ['Quantum Computing', 'Quantum Programming', 'Quantum Algorithms', 'Quantum Programming Languages'] }
+        { year: 'July 2024', title: 'Participant QWorld Quantum Computing Workshop', description: 'I participated in the QWorld Quantum Computing Workshop, where I learned about quantum computing and quantum programming. I also learned about quantum algorithms and quantum programming languages in a very basic way.', skills: ['Quantum Computing', 'Quantum Programming', 'Quantum Algorithms', 'QiSkit'] }
     ];
 
     return (
