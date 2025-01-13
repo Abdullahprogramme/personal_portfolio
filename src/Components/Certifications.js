@@ -67,7 +67,7 @@ const Certifications = () => {
 
   return (
     <div ref={ref} name="certifications" className="w-full min-h-screen bg-[#0a192f] text-gray-300">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full pb-20">
         <div>
           <p className="text-4xl text-[#416D19] font-bold border-b-4 border-pink-300 inline-block">Certifications</p>
           <p className="py-4">/ My professional certifications. /</p>
