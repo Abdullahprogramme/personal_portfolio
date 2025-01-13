@@ -9,6 +9,7 @@ const achievements = [
     'Achieved the organizer position of GDG',
     'Learnt over 6 programming languages',
     'Learnt full-stack web development',
+    'Learn image processing in python',
 ];
 
 // add your language styles of the languages you have learnt here or remove the ones you don't need
