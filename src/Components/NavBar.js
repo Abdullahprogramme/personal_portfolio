@@ -70,29 +70,22 @@ const NavBar = () => {
             </div>
 
             {/* mobile menu */}
-            <ul className={!nav ? 'hidden' : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"}>
-                <li className="py-6 text-3xl ">
-                    <Link onClick={handleclick} to="home" duration={500} smooth={true}>Home</Link>
+            <ul
+            className={`${
+                !nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+            }`}
+            >
+            <div className="justify-start items-start">
+            {links.map((link, index) => (
+                <li key={index} className="py-6 text-3xl pl-6">
+                <Link onClick={handleclick} to={link.toLowerCase()} duration={500} smooth={true}>
+                    {link}
+                </Link>
                 </li>
-                <li className="py-6 text-3xl ">
-                    <Link onClick={handleclick} to="about" duration={500} smooth={true}>About</Link>
-                </li>
-                <li className="py-6 text-3xl ">
-                    <Link onClick={handleclick} to="education" duration={500} smooth={true}>Education</Link>
-                </li>
-                <li className="py-6 text-3xl ">
-                    <Link onClick={handleclick} to="experience" duration={500} smooth={true}>Experience</Link>
-                </li>
-                <li className="py-6 text-3xl ">
-                    <Link onClick={handleclick} to="skills" duration={500} smooth={true}>Skills</Link>
-                </li>
-                <li className="py-6 text-3xl ">
-                    <Link onClick={handleclick} to="work" duration={500} smooth={true}>Work</Link>
-                </li>
-                <li className="py-6 text-3xl ">
-                    <Link onClick={handleclick} to="contact" duration={500} smooth={true}>Contact</Link>
-                </li>
+            ))}
+            </div>
             </ul>
+
 
             {/* Social icons */}
             <div className={`fixed flex-col top-[35%] left-0 ${nav ? 'flex' : 'hidden'} custom:flex`}>
