@@ -5,6 +5,10 @@ import DisplayLottie from "../Lottie/DisplayLottie";
 import Shape from "../Lottie/Shape.json";
 import NotificationBar from "./NotificationBar";
 
+const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const userID = process.env.REACT_APP_EMAILJS_USER_ID;
+
 const Contact = () => {
     const [nameValid, setNameValid] = useState(true);
     const [emailValid, setEmailValid] = useState(true);
@@ -41,7 +45,7 @@ const Contact = () => {
             e.target.message.value = fullMessage;
 
             // change the serviceID, templateID and userID with your own
-            emailjs.sendForm('service_jd1hfxr', 'template_1soq30a', e.target, 'bHsV3KHZq3n9XSzmA')
+            emailjs.sendForm(serviceID, templateID, e.target, userID)
                 .then((result) => {
                     setIsEmailSent('Email sent successfully');
                     setNotification({ message: 'Email sent successfully', type: 'success' });
