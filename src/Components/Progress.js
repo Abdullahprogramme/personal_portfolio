@@ -3,8 +3,27 @@ import { FaStar, FaUsers, FaUserFriends, FaCode } from "react-icons/fa";
 import { MdCollectionsBookmark } from "react-icons/md";
 import DisplayLottie from './Lottie/DisplayLottie';
 import GitHub from './Lottie/Github.json';
+import blob from "../Assets/blob.svg";
 
 const githubUsername = "Abdullahprogramme"; // Replace with your GitHub username
+
+
+const StatCard = ({ icon, value, label }) => (
+    <div className="flex flex-col items-center relative w-28 h-28">
+        <div className="relative flex items-center justify-center w-20 h-20 mb-2">
+            {/* Blob SVG as background */}
+            <img
+                src={blob}
+                alt=""
+                className="absolute top-1/2 left-1/2 w-20 h-20 -translate-x-1/2 -translate-y-1/2 z-0 opacity-80"
+                draggable={false}
+            />
+            <span className="relative z-10">{icon}</span>
+        </div>
+        <span className="font-semibold text-xl">{value}</span>
+        <span className="text-base">{label}</span>
+    </div>
+);
 
 const GitHubStatsCustom = () => {
     const [stats, setStats] = useState({
@@ -74,29 +93,26 @@ const GitHubStatsCustom = () => {
             <DisplayLottie animationData={GitHub} />
 
             <div className="flex flex-wrap justify-center gap-10 text-2xl">
-                <div className="flex flex-col items-center">
-                    <MdCollectionsBookmark className="text-[#81A263] text-4xl mb-2" />
-                    <span className="font-semibold">{stats.publicRepos}</span>
-                    <span className="text-base">Repos</span>
-                </div>
-
-                <div className="flex flex-col items-center">
-                    <FaUsers className="text-[#81A263] text-4xl mb-2" />
-                    <span className="font-semibold">{stats.followers}</span>
-                    <span className="text-base">Followers</span>
-                </div>
-
-                <div className="flex flex-col items-center">
-                    <FaUserFriends className="text-[#81A263] text-4xl mb-2" />
-                    <span className="font-semibold">{stats.following}</span>
-                    <span className="text-base">Following</span>
-                </div>
-
-                <div className="flex flex-col items-center">
-                    <FaStar className="text-[#81A263] text-4xl mb-2" />
-                    <span className="font-semibold">{stats.totalStars}</span>
-                    <span className="text-base">Stars</span>
-                </div>
+                <StatCard
+                    icon={<MdCollectionsBookmark className="text-[#81A263] text-4xl" />}
+                    value={stats.publicRepos}
+                    label="Repos"
+                />
+                <StatCard
+                    icon={<FaUsers className="text-[#81A263] text-4xl" />}
+                    value={stats.followers}
+                    label="Followers"
+                />
+                <StatCard
+                    icon={<FaUserFriends className="text-[#81A263] text-4xl" />}
+                    value={stats.following}
+                    label="Following"
+                />
+                <StatCard
+                    icon={<FaStar className="text-[#81A263] text-4xl" />}
+                    value={stats.totalStars}
+                    label="Stars"
+                />
             </div>
 
             <div className="w-full max-w-4xl mx-auto mt-10 p-6 bg-[#1a2a3a] rounded-lg shadow-lg">
