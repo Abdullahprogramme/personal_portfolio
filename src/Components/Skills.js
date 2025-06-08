@@ -1,6 +1,6 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaGithub, FaGitAlt, FaReact, FaPython, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiMui, SiReact, SiTypescript, SiVisualstudiocode, SiExpo, SiNetlify, SiFlask, SiFirebase, SiMongodb } from "react-icons/si";
+import { SiTailwindcss, SiMui, SiReact, SiTypescript, SiVisualstudiocode, SiExpo, SiNetlify, SiFlask, SiFirebase, SiMongodb, SiLatex } from "react-icons/si";
 import { motion } from "framer-motion";
 import * as Tooltip from "@radix-ui/react-tooltip";
 
@@ -23,7 +23,9 @@ const Skills = () => {
         { icon: <SiFirebase />, name: "Firebase", color: "text-yellow-500" },
         { icon: <SiMongodb />, name: "MongoDB", color: "text-green-600" },
         { icon: <FaNodeJs />, name: "Node.js", color: "text-green-600" },
-        {icon : <SiFlask/>, name: "Flask-Python", color: "text-blue-600"}
+        {icon : <SiFlask/>, name: "Flask-Python", color: "text-blue-600"},
+        { icon: <SiLatex />, name: "LaTeX", color: "text-blue-600" },
+        // Add more skills as needed
     ];
 
     const cardVariants = (index) => ({  // Variants for the card animation
@@ -33,7 +35,7 @@ const Skills = () => {
 
     return (
         <Tooltip.Provider delayDuration={100}>
-            <div name='skills' className="w-full min-h-screen bg-[#0a192f]  text-gray-300">
+            <div name='skills' className="w-full min-h-screen bg-[#0a192f] text-gray-300">
                 <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                     <div>
                         <p className="text-4xl inline text-[#416D19] border-pink-300 border-b-4 font-bold">Experience</p>
