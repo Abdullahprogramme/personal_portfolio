@@ -2,7 +2,7 @@ import React from "react";
 import { FaPython, FaBrain, FaPuzzlePiece, FaImages } from "react-icons/fa";
 import { MdModelTraining } from "react-icons/md";
 import { GoStack } from "react-icons/go";
-import { GiArtificialHive } from "react-icons/gi";
+import { GiArtificialHive, GiArtificialIntelligence } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -63,6 +63,13 @@ const Certifications = () => {
       date: "Jul 2024",
       delay: 0.6,
     },
+    {
+      icon: <GiArtificialIntelligence className="text-white text-3xl" />,
+      title: "Hands-on quantum error correction with Google Quantum AI",
+      institution: "Coursera",
+      date: "Jul 2025",
+      delay: 0.6,
+    }
   ];
 
   return (
