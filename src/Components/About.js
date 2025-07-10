@@ -51,7 +51,7 @@ const About = () => {
                         {/* change the description in the <p> tag below */}
                         <p className="text-lg text-gray-400"> 
                             As a front-end developer, I specialize in crafting visually appealing and functional websites.
-                            Proficient in HTML, CSS, JavaScript, React, Materials UI, and Tailwind CSS, I am currently a freshman at IBA in Karachi, Pakistan.
+                            Proficient in HTML, CSS, JavaScript, React, Materials UI, and Tailwind CSS, I am currently a sophomore at IBA in Karachi, Pakistan.
                             My journey as a self-taught developer involves working on various minor projects, android development and I am enthusiastic about exploring new opportunities for continuous learning and professional growth.
                         </p>
                     </div>
