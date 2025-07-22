@@ -18,6 +18,7 @@ import ToDoList from "../Assets/ToDoList.jpg";
 import Recipe from "../Assets/Recipe.jpg";
 import Bot from "../Assets/Bot.jpg";
 import editor from "../Assets/editor.jpg";
+import Graph from "../Assets/Graph.png";
 
 const Work = () => {
 
@@ -69,8 +70,7 @@ const Work = () => {
                     {/* BMI calculator */}
                     <ProjectCard
                         image={BMI} 
-                        title={"BMI Calculator"} 
-                        // description={"Check your body mass index and seek advice"} 
+                        title={"BMI Calculator"}  
                         appLink={"https://check-body-mass-index.netlify.app/"} 
                         codeLink={"https://github.com/Abdullahprogramme/BMI-calculator"}
                         detailed={"A simple tool to calculate body mass index and offer personalized advice on maintaining a healthy BMI."}
@@ -80,8 +80,7 @@ const Work = () => {
                     {/* Password generator */}
                     <ProjectCard 
                         image={PasswordGenerator} 
-                        title={"Password Generator"} 
-                        // description={"Generate strong passwords using this password generator"} 
+                        title={"Password Generator"}  
                         appLink={"https://passforge.netlify.app"} 
                         codeLink={"https://github.com/Abdullahprogramme/Password_Generator"}
                         detailed={"An application that generates secure passwords based on user preferences like length and characters."}
@@ -91,8 +90,7 @@ const Work = () => {
                     {/* Weather App */}
                     <ProjectCard 
                         image={Weather} 
-                        title={"Weather App"} 
-                        // description={"Check the weather of any city using this weather app"} 
+                        title={"Weather App"}
                         appLink={"https://skyswift.netlify.app"} 
                         codeLink={"https://github.com/Abdullahprogramme/Weather-App"}
                         detailed={"Check the weather of any city, including temperature, humidity, and forecasts for the next five days."}
@@ -103,7 +101,6 @@ const Work = () => {
                     <ProjectCard
                         image={Movie}
                         title={"Movie Recommender"}
-                        // description={"Get movie recommendations based on your favourite genre"}
                         appLink={"https://cine-choice.netlify.app/"} 
                         codeLink={"https://github.com/Abdullahprogramme/Movie-Recommender"}
                         detailed={"Offers personalized movie recommendations and details based on user preferences."}
@@ -114,7 +111,6 @@ const Work = () => {
                     <ProjectCard
                         image={Bot}
                         title={"Fitbot"}
-                        // description={"Chat with the AI chatbot to get fitness advice"}
                         codeLink={"https://github.com/Abdullahprogramme/Fitbot"}
                         appLink={"https://fit-bot.netlify.app/"} 
                         detailed={"A chatbot that provides fitness-related advice and answers users' questions."}
@@ -125,11 +121,20 @@ const Work = () => {
                     <ProjectCard
                         image={editor}
                         title={"Web Editor"}
-                        // description={"Edit and preview HTML and CSS code in real-time"}
                         codeLink={"https://github.com/Abdullahprogramme/web_editor"}
                         appLink={"https://live-web-editor.netlify.app/"}
                         detailed={"An online code editor that allows users to write, edit, and preview HTML and CSS code in real-time."}
                         techStack={["React JS", "Tailwind CSS", "HTML", "CSS"]}
+                    />
+
+                    {/* Graph visualizer */}
+                    <ProjectCard
+                        image={Graph}
+                        title={"Graph Visualizer"}
+                        codeLink={"https://github.com/Abdullahprogramme/Graph-Visualizer"}
+                        appLink={"https://graphvizs.vercel.app/"}
+                        detailed={"A tool for making and visualizing graphs, allowing users to create and run algorithms on them."}
+                        techStack={["Next JS", "Tailwind CSS", "HTML", "CSS", "Shadcn UI", "Cytoscape"]}
                     />
                     </div>
                 : null }
@@ -145,8 +150,7 @@ const Work = () => {
                     {/* Tkinter application */}
                     <ProjectCard 
                         image={test} 
-                        title={"Tkinter application"} 
-                        // description={"Test your knowledge by this interactive quiz"} 
+                        title={"Tkinter application"}  
                         codeLink={"https://github.com/Abdullahprogramme/APS-Project/"}
                         detailed={"A quiz application where users answer random questions and receive a score at the end."}
                         techStack={["Python", "Tkinter"]}
@@ -155,8 +159,7 @@ const Work = () => {
                     {/* Password manager */}
                     <ProjectCard
                         image={Password} 
-                        title={"Password manager"} 
-                        // description={"Store your passwords securely by this password manager"} 
+                        title={"Password manager"}  
                         codeLink={"https://github.com/Abdullahprogramme/additonal-programs/blob/main/password%20manager.py"}
                         detailed={"A secure tool for storing, viewing, and managing passwords."}
                         techStack={["Python"]}
@@ -165,8 +168,7 @@ const Work = () => {
                     {/* Pygame application */}
                     <ProjectCard
                         image={space} 
-                        title={"Pygame application"} 
-                        // description={"A retro game of space invaders using Pygame"} 
+                        title={"Pygame application"}  
                         codeLink={"https://github.com/Abdullahprogramme/PyGame/tree/main/Space%20Invaders"}
                         detailed={"A retro-style space shooter game where players control a spaceship to defeat enemies."}
                         techStack={["Python", "Pygame"]}
@@ -176,7 +178,6 @@ const Work = () => {
                     <ProjectCard
                         image={QuadTree}
                         title={"QuadTree application"}
-                        // description={"Compress images using QuadTree algorithm in Python"} 
                         appLink={"https://quadracompress.streamlit.app/"}
                         codeLink={"https://github.com/Abdullahprogramme/DSA-Project"}
                         detailed={"An app that compresses images, allowing users to view and compare the original and compressed versions."}
@@ -197,7 +198,6 @@ const Work = () => {
                     <ProjectCard 
                         image={Calculator}
                         title={"Calculator"} 
-                        // description={"Perform basic arithmetic operations using this calculator"}
                         codeLink={"https://github.com/Abdullahprogramme/PRODIGY_AD_01"}
                         detailed={"A basic calculator for performing arithmetic operations and managing inputs."}
                         techStack={["React Native", "Expo"]}
@@ -207,7 +207,6 @@ const Work = () => {
                     <ProjectCard
                         image={QRcode}
                         title={"QR Code Reader"}
-                        // description={"Read QR codes using this QR code reader"}
                         codeLink={"https://github.com/Abdullahprogramme/PRODIGY_AD_05"}
                         detailed={"A reader that scans and displays the content of QR codes, whether text, URLs, or contacts."}
                         techStack={["React Native", "Expo"]}
@@ -217,7 +216,6 @@ const Work = () => {
                     <ProjectCard
                         image={TicTacToe}
                         title={"Tic Tac Toe"}
-                        // description={"Play the classic game of tic tac toe"}
                         codeLink={"https://github.com/Abdullahprogramme/PRODIGY_AD_04"}
                         detailed={"A classic game where users can play against another player or the computer."}
                         techStack={["React Native", "Expo"]}
@@ -226,8 +224,7 @@ const Work = () => {
                     {/* Stop Watch */}
                     <ProjectCard
                         image={StopWatch}
-                        title={"Stop Watch"}
-                        // description={"Use this stop watch to measure time intervals"} 
+                        title={"Stop Watch"} 
                         codeLink={"https://github.com/Abdullahprogramme/PRODIGY_AD_03"}
                         detailed={"A stopwatch for tracking time intervals, with start, stop, and reset functionality."}
                         techStack={["React Native", "Expo"]}
@@ -237,7 +234,6 @@ const Work = () => {
                     <ProjectCard
                         image={ToDoList}
                         title={"To Do List"}
-                        // description={"Create a to-do list using this application"}
                         codeLink={"https://github.com/Abdullahprogramme/ToDoList"}
                         detailed={"A simple application for users to add, view, and manage tasks in a to-do list."}
                         techStack={["React Native", "Expo"]}
@@ -247,7 +243,6 @@ const Work = () => {
                     <ProjectCard
                         image={Recipe}
                         title={"Recipe App"}
-                        // description={"Save your favourite recipes using this recipe app"}
                         codeLink={"https://github.com/Abdullahprogramme/RecipeApp"} 
                         detailed={"A tool for users to save, view, and manage their favorite recipes along with ingredients and instructions."}
                         techStack={["React Native", "Expo"]}
