@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css'; // import the styles
 // add your languages and interests here
 const LanguagesAndInterests = () => {
     const languages = ['English', 'Urdu'];
-    const interests = ['Coding', 'Reading', 'Cooking', 'Technology', 'Gaming'];
+    const interests = ['Coding', 'Reading', 'Cooking', 'Technology', 'Gaming', 'Table Tennis'];
 
     return (
         <div className="w-full bg-[#0a192f] text-gray-300 pb-8">
