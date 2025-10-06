@@ -55,7 +55,7 @@ const NavBar = () => {
                         to={link.charAt(0).toLowerCase() + link.slice(1)}
                         duration={500}
                         smooth={true}
-                        className={`text-white font-normal border-animation ${activeLink !== null && activeLink !== index && 'dim'}`}
+                        className={`text-white text-lg font-normal border-animation ${activeLink !== null && activeLink !== index && 'dim'}`}
                         onMouseOver={() => handleMouseOver(index)}
                         onMouseOut={handleMouseOut}
                     >
