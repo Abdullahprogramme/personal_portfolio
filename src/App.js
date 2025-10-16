@@ -16,6 +16,7 @@ import Lottie from './Components/Lottie/lottie';
 import Achievement from './Components/Achievement';
 import Github from './Components/Github';
 import Articles from './Components/Articles';
+import Testimonials from './Components/Testimonials';
 
 const LoadingSpinner = ({ isFadingOut }) => {
     return (
@@ -58,6 +59,7 @@ function App() {
             <Experience />
             <Certifications />
             <Skills />
+            <Testimonials />
             <Work />
             <Achievement />
             <Articles />
