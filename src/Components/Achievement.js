@@ -10,6 +10,7 @@ const achievements = [
     'Learnt over 6 programming languages',
     'Learnt full-stack web development',
     'Learn image processing in python',
+    'Learnt Quantum computing basics',
 ];
 
 // add your language styles of the languages you have learnt here or remove the ones you don't need
