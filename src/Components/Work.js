@@ -19,10 +19,12 @@ import Recipe from "../Assets/Recipe.jpg";
 import Bot from "../Assets/Bot.jpg";
 import editor from "../Assets/editor.jpg";
 import Graph from "../Assets/Graph.png";
+import CSSociety from "../Assets/CSSociety.png";
+import InOut from "../Assets/InOut.jpeg";
 
 const Work = () => {
 
-    const types = ['React JS', 'Python', 'React Native', 'All'];
+    const types = ['React JS', 'Full Stack', 'Python', 'React Native', 'Flutter', 'All'];
     const [selectedType, setSelectedType] = React.useState('All');
     const [animate, setAnimate] = React.useState(false);
 
@@ -139,6 +141,27 @@ const Work = () => {
                     </div>
                 : null }
 
+
+                {/* Full Stack Heading */}
+                {/* <div className="pb-4 pl-4">
+                    <p className="text-2xl font-bold inline text-[#416D19]">Full Stack</p>
+                </div> */}
+
+                {/* Full Stack Projects */}
+                { selectedType === 'Full Stack' || selectedType === 'All' ?
+                <div className={`grid pb-8 sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4 ${animate ? 'fadeIn' : ''}`}>
+                    {/* CS Society */}
+                    <ProjectCard
+                        image={CSSociety} 
+                        title={"Computer Science Society Website"}  
+                        appLink={"https://css.iba.edu.pk/"} 
+                        detailed={"A website for the Computer Science Society of IBA Karachi, showcasing events, members, and activities."}
+                        techStack={["Next JS", "PostgreSQL", "Supabase", "MongoDB", "Tailwind CSS", "HTML", "CSS"]}
+                    />
+                </div>
+                : null }
+                      
+
                 {/* Python Heading */}
                 {/* <div className="pb-4 pl-4 pt-8">
                     <p className="text-2xl font-bold inline text-[#416D19]">Python</p>
@@ -248,6 +271,26 @@ const Work = () => {
                         techStack={["React Native", "Expo"]}
                     />
 
+                </div>
+                : null }
+
+
+                {/* Flutter Heading */}
+                {/* <div className="pb-4 pl-4">
+                    <p className="text-2xl font-bold inline text-[#416D19]">Flutter</p>
+                </div> */}
+
+                {/* Flutter Projects */}
+                { selectedType === 'Flutter' || selectedType === 'All' ?
+                <div className={`grid pb-8 sm:grid-cols-2 pl-6 pr-6 sm:pl-2 sm:pr-2 md:grid-cols-3 gap-4 ${animate ? 'fadeIn' : ''}`}>
+                    {/* InOut app */}
+                    <ProjectCard
+                        image={InOut} 
+                        title={"InOut Expense Tracker"}  
+                        codeLink={"https://github.com/Abdullahprogramme/wallet"}
+                        detailed={"An expense tracker app that helps users manage their income and expenses effectively."}
+                        techStack={["Flutter", "Dart", "MongoDB", "Node.js", "Express"]}
+                    />
                 </div>
                 : null }
 
