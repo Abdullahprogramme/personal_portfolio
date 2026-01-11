@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPython, FaBrain, FaPuzzlePiece, FaImages } from "react-icons/fa";
+import { FaPython, FaBrain, FaPuzzlePiece, FaImages, FaAtom } from "react-icons/fa";
 import { MdModelTraining } from "react-icons/md";
 import { GoStack } from "react-icons/go";
 import { GiArtificialHive, GiArtificialIntelligence } from "react-icons/gi";
@@ -69,6 +69,13 @@ const Certifications = () => {
       institution: "Coursera",
       date: "Jul 2025",
       delay: 0.6,
+    },
+    {
+      icon: <FaAtom className="text-white text-3xl" />,
+      title: "IQM Quantum School Certificate",
+      institution: "IQM Quantum Computers",
+      date: "Dec 2025",
+      delay: 0.7,
     }
   ];
 
