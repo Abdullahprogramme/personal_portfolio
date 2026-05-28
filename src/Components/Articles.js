@@ -8,6 +8,14 @@ const articles = [
     link: 'https://medium.com/@abdtariq78/from-bits-to-qubits-understanding-superposition-and-dirac-notation-f75b78633a30',
     date: 'Sep 29, 2025',
     category: 'Quantum Computing',
+  },
+  {
+    id: 2,
+    title: 'Quantum Path Finding compared with A* and BFS',
+    description: 'In this article, we will explore the concept of quantum path finding and compare it with classical algorithms like A* and Breadth-First Search (BFS). We will discuss how quantum algorithms can potentially offer advantages in certain scenarios and analyze their performance compared to traditional methods.',
+    link: 'https://medium.com/@abdtariq78/quantum-path-finding-compared-with-a-and-bfs-7eb81897f955',
+    date: 'May 25, 2026',
+    category: 'Quantum Computing',
   }
 ];
 
